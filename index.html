@@ -5,120 +5,353 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Fee Portal | 3rd Term 2025-2026</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
         body {
             font-family: 'Inter', Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
             min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        
         .container {
-            max-width: 900px;
-            margin: 40px auto;
+            max-width: 1000px;
+            width: 100%;
+            margin: 20px auto;
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-radius: 24px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            overflow: hidden;
+            animation: slideUp 0.5s ease;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+            color: white;
+            padding: 35px 30px;
+            text-align: center;
+            position: relative;
             overflow: hidden;
         }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 300px;
+            height: 300px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50%;
         }
+        
         header h1 {
-            margin: 0;
             font-size: 2.2em;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            position: relative;
         }
+        
+        header p {
+            opacity: 0.8;
+            margin-top: 8px;
+            font-weight: 400;
+            position: relative;
+        }
+        
         .form-section {
             padding: 40px 30px;
             text-align: center;
             background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
         }
+        
+        .form-section h2 {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        .input-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
         input {
-            padding: 18px 20px;
-            font-size: 1.1em;
-            width: 320px;
-            border: 3px solid #ddd;
+            padding: 16px 20px;
+            font-size: 1em;
+            flex: 1;
+            min-width: 200px;
+            border: 3px solid #dee2e6;
             border-radius: 12px;
             outline: none;
             transition: all 0.3s;
+            font-family: 'Inter', Arial, sans-serif;
         }
+        
         input:focus {
-            border-color: #27ae60;
-            box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.2);
+            border-color: #667eea;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
         }
+        
+        input::placeholder {
+            color: #adb5bd;
+        }
+        
         button {
-            padding: 18px 32px;
-            font-size: 1.1em;
-            background: #27ae60;
+            padding: 16px 32px;
+            font-size: 1em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border: none;
             border-radius: 12px;
             cursor: pointer;
-            margin-left: 12px;
             font-weight: 600;
             transition: all 0.3s;
+            font-family: 'Inter', Arial, sans-serif;
+            white-space: nowrap;
         }
+        
         button:hover {
-            background: #219653;
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
         }
-        #result {
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .result-section {
+            padding: 30px;
+            min-height: 300px;
+        }
+        
+        .loading {
+            text-align: center;
             padding: 40px;
-            min-height: 400px;
+            color: #6c757d;
         }
+        
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #e9ecef;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 15px;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .error {
+            background: #fef2f2;
+            border-left: 6px solid #ef4444;
+            padding: 25px;
+            border-radius: 12px;
+            color: #991b1b;
+            text-align: center;
+        }
+        
+        .error .icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
         .success {
             background: #f0fdf4;
-            border-left: 6px solid #27ae60;
+            border-left: 6px solid #22c55e;
+            padding: 30px;
+            border-radius: 12px;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 25px 0;
-            background: white;
+        
+        .student-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
         }
-        th, td {
-            padding: 14px 12px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
+        
+        .student-header h2 {
+            color: #166534;
+            font-size: 1.5em;
         }
-        th {
-            background: #2c3e50;
+        
+        .student-header .class-badge {
+            background: #667eea;
             color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
             font-weight: 600;
         }
-        .balance {
-            color: #e74c3c;
-            font-weight: bold;
-            font-size: 1.3em;
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
         }
+        
+        .summary-card {
+            background: white;
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .summary-card .label {
+            font-size: 0.8em;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .summary-card .value {
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+        
+        .summary-card .value.balance {
+            color: #dc2626;
+        }
+        
+        .summary-card .value.positive {
+            color: #16a34a;
+        }
+        
+        .fee-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        
+        .fee-table th {
+            background: #f1f5f9;
+            color: #1e293b;
+            font-weight: 600;
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .fee-table td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .fee-table tr:hover td {
+            background: #f8fafc;
+        }
+        
+        .fee-table .fee-amount {
+            text-align: right;
+            font-weight: 500;
+        }
+        
         .footer {
             text-align: center;
             padding: 20px;
-            color: #666;
-            font-size: 0.9em;
+            color: #6c757d;
+            font-size: 0.85em;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .help-text {
+            margin-top: 15px;
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+        
+        .help-text a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .help-text a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5em; }
+            .form-section { padding: 25px 15px; }
+            .input-group { flex-direction: column; align-items: stretch; }
+            input { min-width: unset; }
+            button { width: 100%; }
+            .summary-cards { grid-template-columns: 1fr 1fr; }
+            .student-header { flex-direction: column; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="app">
         <header>
-            <h1>🌟 School Fee Portal</h1>
-            <p>3rd Term 2025-2026 • Private & Secure</p>
+            <h1>🏫 School Fee Portal</h1>
+            <p>3rd Term 2025-2026 • Secure Private Access</p>
         </header>
 
         <div class="form-section">
-            <h2>Enter Your Family Code</h2>
-            <input type="text" id="codeInput" placeholder="e.g. ABAABD1000" 
-                   onkeypress="if(event.key === 'Enter') checkCode()">
-            <button onclick="checkCode()">🔍 Check Details</button>
+            <h2>🔑 Enter Your Family Code</h2>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="codeInput" 
+                    placeholder="e.g. ABAAB1000" 
+                    maxlength="20"
+                    autofocus
+                    onkeypress="if(event.key === 'Enter') checkCode()"
+                >
+                <button id="checkBtn" onclick="checkCode()">
+                    🔍 Check Details
+                </button>
+            </div>
+            <div class="help-text">
+                <small>Don't have a code? Contact the school administration.</small>
+            </div>
         </div>
 
-        <div id="result"></div>
+        <div class="result-section" id="result">
+            <div style="text-align:center; color:#6c757d; padding:40px;">
+                <p style="font-size:1.1em;">👋 Enter your family code to view fee details</p>
+            </div>
+        </div>
 
         <div class="footer">
             <p>For support, contact the school administration</p>
@@ -126,55 +359,175 @@
     </div>
 
     <script>
+        // Cache DOM elements
+        const resultDiv = document.getElementById('result');
+        const codeInput = document.getElementById('codeInput');
+        const checkBtn = document.getElementById('checkBtn');
+
+        // Student data cache
+        let studentData = null;
+
+        // Load data on page load
+        async function loadData() {
+            try {
+                const res = await fetch('students.json');
+                if (!res.ok) throw new Error('Failed to load data');
+                studentData = await res.json();
+                console.log('✅ Data loaded:', Object.keys(studentData).length, 'students');
+                return true;
+            } catch (e) {
+                console.error('Error loading data:', e);
+                return false;
+            }
+        }
+
+        // Main check function
         async function checkCode() {
-            const code = document.getElementById('codeInput').value.trim().toUpperCase();
-            const resultDiv = document.getElementById('result');
+            const code = codeInput.value.trim().toUpperCase();
             
             if (!code) {
-                resultDiv.innerHTML = `<p style="color:red; text-align:center;">⚠️ Please enter your family code.</p>`;
+                showError('Please enter your family code.', '🔑');
                 return;
             }
 
-            resultDiv.innerHTML = `<p style="text-align:center;">Loading...</p>`;
+            // Show loading
+            resultDiv.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Checking records...</p>
+                </div>
+            `;
+
+            checkBtn.disabled = true;
+            codeInput.disabled = true;
 
             try {
-                const res = await fetch('students.json');
-                const data = await res.json();
-
-                if (data[code]) {
-                    const s = data[code];
-                    let html = `
-                        <div class="success" style="padding:30px; border-radius:12px;">
-                            <h2 style="color:#27ae60; margin-top:0;">✅ ${s.name}</h2>
-                            <p><strong>Class:</strong> ${s.class}</p>
-                            
-                            <div style="display: flex; gap: 30px; margin: 25px 0; font-size: 1.2em;">
-                                <div><strong>Total Fee:</strong> ₦${Number(s.total_fee).toLocaleString()}</div>
-                                <div><strong>Paid:</strong> ₦${Number(s.total_paid).toLocaleString()}</div>
-                                <div class="balance">Balance: ₦${Number(s.balance).toLocaleString()}</div>
-                            </div>
-
-                            <h3 style="margin-top:30px;">Fee Breakdown</h3>
-                            <table>
-                                <tr><th>Category</th><th>Amount (₦)</th></tr>`;
-                    
-                    Object.keys(s.details).forEach(key => {
-                        const val = s.details[key];
-                        if (!isNaN(parseFloat(val)) && parseFloat(val) > 0 && 
-                            !['LAST NAME','FIRST NAME','CLASS'].includes(key)) {
-                            html += `<tr><td>${key}</td><td>${parseFloat(val).toLocaleString()}</td></tr>`;
-                        }
-                    });
-                    
-                    html += `</table></div>`;
-                    resultDiv.innerHTML = html;
-                } else {
-                    resultDiv.innerHTML = `<p style="color:red; text-align:center; font-size:1.2em;">❌ Invalid code.<br>Contact the school for assistance.</p>`;
+                // Load data if not loaded
+                if (!studentData) {
+                    const loaded = await loadData();
+                    if (!loaded) {
+                        showError('Unable to load student data. Please try again later.', '⚠️');
+                        return;
+                    }
                 }
-            } catch(e) {
-                resultDiv.innerHTML = `<p style="color:red; text-align:center;">Error loading data. Please try again.</p>`;
+
+                // Find student
+                const student = studentData[code];
+                
+                if (student) {
+                    displayStudent(student, code);
+                } else {
+                    // Try case-insensitive search
+                    const foundKey = Object.keys(studentData).find(
+                        k => k.toUpperCase() === code
+                    );
+                    if (foundKey) {
+                        displayStudent(studentData[foundKey], foundKey);
+                    } else {
+                        showError(
+                            'Invalid family code. Please check and try again, or contact the school for assistance.',
+                            '❓'
+                        );
+                    }
+                }
+            } catch (e) {
+                console.error('Error:', e);
+                showError('An error occurred. Please refresh and try again.', '⚠️');
+            } finally {
+                checkBtn.disabled = false;
+                codeInput.disabled = false;
             }
         }
+
+        function displayStudent(student, code) {
+            const totalFee = student.total_fee || 0;
+            const totalPaid = student.total_paid || 0;
+            const balance = student.balance || 0;
+            
+            // Build details table
+            let detailsHtml = '';
+            const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS', 'TOTAL FEE', 'TOTAL PAID', 'BALANCE', 'code'];
+            
+            // Filter and sort details
+            const detailItems = Object.entries(student.details || {})
+                .filter(([key, val]) => {
+                    if (excludeKeys.includes(key.toUpperCase())) return false;
+                    const numVal = parseFloat(val);
+                    return !isNaN(numVal) && numVal > 0 && val !== '' && val !== '0';
+                })
+                .sort((a, b) => a[0].localeCompare(b[0]));
+            
+            if (detailItems.length > 0) {
+                detailsHtml = detailItems.map(([key, val]) => `
+                    <tr>
+                        <td>${key.replace(/_/g, ' ')}</td>
+                        <td class="fee-amount">₦${parseFloat(val).toLocaleString()}</td>
+                    </tr>
+                `).join('');
+            }
+
+            // Determine balance class
+            const balanceClass = balance > 0 ? 'balance' : (balance < 0 ? 'positive' : '');
+
+            resultDiv.innerHTML = `
+                <div class="success">
+                    <div class="student-header">
+                        <div>
+                            <h2>✅ ${student.name}</h2>
+                            <div style="color:#6b7280; font-size:0.95em;">Code: ${code}</div>
+                        </div>
+                        <span class="class-badge">${student.class}</span>
+                    </div>
+                    
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <div class="label">Total Fee</div>
+                            <div class="value">₦${totalFee.toLocaleString()}</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="label">Amount Paid</div>
+                            <div class="value" style="color:#16a34a;">₦${totalPaid.toLocaleString()}</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="label">Balance</div>
+                            <div class="value ${balanceClass}">₦${balance.toLocaleString()}</div>
+                        </div>
+                    </div>
+                    
+                    ${detailItems.length > 0 ? `
+                        <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown</h3>
+                        <div style="overflow-x:auto;">
+                            <table class="fee-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th style="text-align:right;">Amount (₦)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${detailsHtml}
+                                </tbody>
+                            </table>
+                        </div>
+                    ` : '<p style="color:#6b7280; margin-top:15px;">No additional fee details available.</p>'}
+                </div>
+            `;
+        }
+
+        function showError(message, icon = '❌') {
+            resultDiv.innerHTML = `
+                <div class="error">
+                    <div class="icon">${icon}</div>
+                    <p style="font-size:1.1em; font-weight:500;">${message}</p>
+                </div>
+            `;
+        }
+
+        // Load data on page load
+        loadData();
+
+        // Focus input on load
+        codeInput.focus();
     </script>
 </body>
 </html>
