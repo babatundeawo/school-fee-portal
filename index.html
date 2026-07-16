@@ -285,15 +285,6 @@
             font-weight: 500;
         }
         
-        .fee-table .total-row {
-            background: #f1f5f9;
-            font-weight: 700;
-        }
-        
-        .fee-table .total-row td {
-            border-top: 2px solid #94a3b8;
-        }
-        
         .footer {
             text-align: center;
             padding: 20px;
@@ -467,9 +458,8 @@
             const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS'];
             const feeKeys = Object.keys(student.details).filter(k => !excludeKeys.includes(k));
             
-            // Build details table
+            // Build details table - only show columns with values
             let detailsHtml = '';
-            let runningTotal = 0;
             let hasValues = false;
             
             for (const key of feeKeys) {
@@ -477,7 +467,6 @@
                 if (val !== undefined && val !== null && val !== '' && val !== '0') {
                     const numVal = parseFloat(val);
                     if (!isNaN(numVal)) {
-                        runningTotal += numVal;
                         detailsHtml += `
                             <tr>
                                 <td>${key.replace(/_/g, ' ')}</td>
@@ -495,20 +484,6 @@
                         hasValues = true;
                     }
                 }
-            }
-            
-            // Add total row if there are details
-            if (hasValues) {
-                detailsHtml += `
-                    <tr class="total-row">
-                        <td><strong>Subtotal (Breakdown)</strong></td>
-                        <td class="fee-amount"><strong>₦${runningTotal.toLocaleString()}</strong></td>
-                    </tr>
-                    <tr class="total-row">
-                        <td><strong>Total Fee (from sheet)</strong></td>
-                        <td class="fee-amount"><strong>₦${totalFee.toLocaleString()}</strong></td>
-                    </tr>
-                `;
             }
 
             // Determine balance class
@@ -540,7 +515,7 @@
                     </div>
                     
                     ${hasValues ? `
-                        <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown (Columns J through AB)</h3>
+                        <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown</h3>
                         <div style="overflow-x:auto;">
                             <table class="fee-table">
                                 <thead>
@@ -554,22 +529,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        ${Math.abs(runningTotal - totalFee) > 0.01 ? `
-                            <div style="margin-top: 10px; padding: 10px; background: #fef3c7; border-radius: 8px; color: #92400e;">
-                                <strong>⚠️ Note:</strong> The breakdown subtotal (₦${runningTotal.toLocaleString()}) 
-                                differs from the total fee (₦${totalFee.toLocaleString()}). 
-                                This may include additional fees not shown in the breakdown.
-                            </div>
-                        ` : `
-                            <div style="margin-top: 10px; padding: 10px; background: #d1fae5; border-radius: 8px; color: #065f46;">
-                                ✅ All fee components add up to the total fee.
-                            </div>
-                        `}
                     ` : '<p style="color:#6b7280; margin-top:15px;">No fee details available.</p>'}
-                    
-                    <div style="margin-top: 15px; padding: 8px 12px; background: #f1f5f9; border-radius: 6px; font-size: 0.8em; color: #64748b;">
-                        📊 Showing ${feeKeys.length} fee columns from the spreadsheet
-                    </div>
                 </div>
             `;
         }
