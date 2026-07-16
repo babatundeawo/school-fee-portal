@@ -2,36 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>School Fee Portal | 3rd Term 2025-2026</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
         
         body {
-            font-family: 'Inter', Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
             min-height: 100vh;
+            min-height: 100dvh;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 20px;
+            padding: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
         .container {
-            max-width: 1100px;
+            max-width: 500px;
             width: 100%;
-            margin: 20px auto;
+            margin: 0 auto;
             background: white;
-            border-radius: 24px;
-            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
             overflow: hidden;
-            animation: slideUp 0.5s ease;
+            animation: slideUp 0.4s ease;
         }
         
         @keyframes slideUp {
@@ -40,9 +44,9 @@
         }
         
         header {
-            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
             color: white;
-            padding: 35px 30px;
+            padding: 28px 20px 22px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -51,60 +55,83 @@
         header::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 300px;
-            height: 300px;
-            background: rgba(255,255,255,0.05);
+            top: -60%;
+            right: -30%;
+            width: 250px;
+            height: 250px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -40%;
+            left: -20%;
+            width: 180px;
+            height: 180px;
+            background: rgba(255,255,255,0.03);
             border-radius: 50%;
         }
         
         header h1 {
-            font-size: 2.2em;
-            font-weight: 700;
+            font-size: 1.7em;
+            font-weight: 800;
             letter-spacing: -0.5px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        header h1 .emoji {
+            font-size: 1.1em;
         }
         
         header p {
-            opacity: 0.8;
-            margin-top: 8px;
+            opacity: 0.75;
+            margin-top: 6px;
+            font-size: 0.9em;
             font-weight: 400;
             position: relative;
+            letter-spacing: 0.3px;
         }
         
         .form-section {
-            padding: 40px 30px;
+            padding: 28px 18px 24px;
             text-align: center;
             background: #f8f9fa;
             border-bottom: 1px solid #e9ecef;
         }
         
         .form-section h2 {
-            font-size: 1.3em;
-            color: #2c3e50;
-            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #1a252f;
+            margin-bottom: 16px;
+            font-weight: 600;
         }
         
         .input-group {
             display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            max-width: 600px;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 100%;
             margin: 0 auto;
         }
         
         input {
-            padding: 16px 20px;
+            padding: 16px 18px;
             font-size: 1em;
-            flex: 1;
-            min-width: 200px;
-            border: 3px solid #dee2e6;
+            width: 100%;
+            border: 2.5px solid #dee2e6;
             border-radius: 12px;
             outline: none;
-            transition: all 0.3s;
-            font-family: 'Inter', Arial, sans-serif;
+            transition: all 0.25s ease;
+            font-family: 'Inter', -apple-system, Arial, sans-serif;
+            background: white;
+            -webkit-appearance: none;
+            appearance: none;
         }
         
         input:focus {
@@ -114,29 +141,32 @@
         
         input::placeholder {
             color: #adb5bd;
+            font-size: 0.95em;
+        }
+        
+        input:disabled {
+            opacity: 0.6;
+            background: #f1f3f5;
         }
         
         button {
-            padding: 16px 32px;
+            padding: 16px 20px;
             font-size: 1em;
+            width: 100%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border: none;
             border-radius: 12px;
             cursor: pointer;
             font-weight: 600;
-            transition: all 0.3s;
-            font-family: 'Inter', Arial, sans-serif;
-            white-space: nowrap;
-        }
-        
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: all 0.25s ease;
+            font-family: 'Inter', -apple-system, Arial, sans-serif;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
         
         button:active {
-            transform: translateY(0);
+            transform: scale(0.97);
         }
         
         button:disabled {
@@ -145,96 +175,138 @@
             transform: none;
         }
         
+        button .btn-icon {
+            margin-right: 8px;
+        }
+        
+        .help-text {
+            margin-top: 14px;
+            font-size: 0.8em;
+            color: #868e96;
+            line-height: 1.4;
+        }
+        
+        .help-text a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .help-text a:active {
+            opacity: 0.7;
+        }
+        
         .result-section {
-            padding: 30px;
-            min-height: 300px;
+            padding: 20px 16px 24px;
+            min-height: 200px;
         }
         
         .loading {
             text-align: center;
-            padding: 40px;
+            padding: 40px 20px;
             color: #6c757d;
         }
         
         .spinner {
             display: inline-block;
-            width: 40px;
-            height: 40px;
-            border: 4px solid #e9ecef;
-            border-top: 4px solid #667eea;
+            width: 36px;
+            height: 36px;
+            border: 3.5px solid #e9ecef;
+            border-top: 3.5px solid #667eea;
             border-radius: 50%;
-            animation: spin 0.8s linear infinite;
-            margin-bottom: 15px;
+            animation: spin 0.7s linear infinite;
+            margin-bottom: 14px;
         }
         
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
         
+        .loading p {
+            font-size: 0.95em;
+        }
+        
         .error {
             background: #fef2f2;
-            border-left: 6px solid #ef4444;
-            padding: 25px;
-            border-radius: 12px;
+            border-left: 4px solid #ef4444;
+            padding: 20px 18px;
+            border-radius: 10px;
             color: #991b1b;
             text-align: center;
         }
         
         .error .icon {
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-size: 2.5em;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .error p {
+            font-size: 0.95em;
+            font-weight: 500;
+            line-height: 1.5;
         }
         
         .success {
             background: #f0fdf4;
-            border-left: 6px solid #22c55e;
-            padding: 30px;
-            border-radius: 12px;
+            border-left: 4px solid #22c55e;
+            padding: 20px 16px 18px;
+            border-radius: 10px;
         }
         
         .student-header {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 16px;
+            padding-bottom: 14px;
             border-bottom: 2px solid #e5e7eb;
         }
         
         .student-header h2 {
             color: #166534;
-            font-size: 1.5em;
+            font-size: 1.15em;
+            font-weight: 700;
+            line-height: 1.3;
+            word-break: break-word;
+        }
+        
+        .student-header .code-info {
+            color: #6b7280;
+            font-size: 0.82em;
+            font-weight: 500;
         }
         
         .student-header .class-badge {
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 6px 16px;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 0.9em;
+            font-size: 0.78em;
             font-weight: 600;
+            display: inline-block;
+            align-self: flex-start;
+            letter-spacing: 0.3px;
         }
         
         .summary-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin: 25px 0;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 8px;
+            margin: 16px 0 20px;
         }
         
         .summary-card {
             background: white;
-            padding: 18px;
-            border-radius: 12px;
+            padding: 14px 8px;
+            border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             text-align: center;
             border: 1px solid #e5e7eb;
         }
         
         .summary-card .label {
-            font-size: 0.8em;
+            font-size: 0.6em;
             color: #6b7280;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -242,9 +314,10 @@
         }
         
         .summary-card .value {
-            font-size: 1.5em;
+            font-size: 1.1em;
             font-weight: 700;
-            margin-top: 5px;
+            margin-top: 4px;
+            word-break: break-word;
         }
         
         .summary-card .value.balance {
@@ -255,80 +328,169 @@
             color: #16a34a;
         }
         
+        .fee-section-title {
+            font-size: 1em;
+            font-weight: 600;
+            color: #1e293b;
+            margin: 18px 0 10px;
+        }
+        
+        .fee-table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 0 -4px;
+            padding: 0 4px;
+        }
+        
         .fee-table {
             width: 100%;
+            min-width: 280px;
             border-collapse: collapse;
-            margin-top: 20px;
-            font-size: 0.95em;
+            font-size: 0.88em;
+            border-radius: 8px;
+            overflow: hidden;
         }
         
         .fee-table th {
             background: #f1f5f9;
             color: #1e293b;
             font-weight: 600;
-            padding: 12px 15px;
+            padding: 10px 12px;
             text-align: left;
             border-bottom: 2px solid #e2e8f0;
+            font-size: 0.82em;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
         }
         
         .fee-table td {
-            padding: 10px 15px;
+            padding: 9px 12px;
             border-bottom: 1px solid #e2e8f0;
+            font-size: 0.9em;
         }
         
-        .fee-table tr:hover td {
-            background: #f8fafc;
+        .fee-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .fee-table tr:active td {
+            background: #f1f3f5;
         }
         
         .fee-table .fee-amount {
             text-align: right;
             font-weight: 500;
+            white-space: nowrap;
+        }
+        
+        .fee-table .category-name {
+            word-break: break-word;
+            padding-right: 8px;
+        }
+        
+        .no-details {
+            color: #6b7280;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
         }
         
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #6c757d;
-            font-size: 0.85em;
+            padding: 16px 18px;
+            color: #868e96;
+            font-size: 0.75em;
             background: #f8f9fa;
             border-top: 1px solid #e9ecef;
+            line-height: 1.5;
         }
         
-        .help-text {
-            margin-top: 15px;
-            font-size: 0.85em;
-            color: #6c757d;
+        /* Touch-friendly tap targets */
+        .clickable {
+            cursor: pointer;
+            touch-action: manipulation;
         }
         
-        .help-text a {
-            color: #667eea;
-            text-decoration: none;
+        /* Improved scrolling */
+        .scrollable {
+            -webkit-overflow-scrolling: touch;
         }
         
-        .help-text a:hover {
-            text-decoration: underline;
+        /* Small screen optimizations */
+        @media (max-width: 380px) {
+            body { padding: 8px; }
+            header h1 { font-size: 1.4em; }
+            .summary-cards { gap: 5px; }
+            .summary-card .value { font-size: 0.95em; }
+            .summary-card { padding: 10px 6px; }
+            .fee-table { font-size: 0.8em; }
+            .fee-table th, .fee-table td { padding: 7px 8px; }
         }
         
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.5em; }
-            .form-section { padding: 25px 15px; }
-            .input-group { flex-direction: column; align-items: stretch; }
-            input { min-width: unset; }
-            button { width: 100%; }
-            .summary-cards { grid-template-columns: 1fr 1fr; }
-            .student-header { flex-direction: column; }
+        @media (min-width: 600px) {
+            body { padding: 30px; }
+            .container { max-width: 600px; }
+            .summary-cards { gap: 12px; }
+            .summary-card .value { font-size: 1.3em; }
+            .fee-table { font-size: 0.95em; }
+        }
+        
+        @media (min-width: 768px) {
+            .container { max-width: 700px; }
+            .input-group { flex-direction: row; }
+            input { flex: 1; }
+            button { width: auto; min-width: 140px; }
+            .summary-cards { gap: 15px; }
+        }
+        
+        @media (max-width: 480px) {
+            .student-header h2 { font-size: 1em; }
+            .summary-card .label { font-size: 0.55em; }
+            .summary-card .value { font-size: 1em; }
+        }
+        
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
+            .container { background: #1e293b; }
+            header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+            .form-section { background: #1e293b; border-bottom-color: #334155; }
+            .form-section h2 { color: #e2e8f0; }
+            input { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+            input::placeholder { color: #64748b; }
+            input:focus { border-color: #818cf8; box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2); }
+            .success { background: #052e16; border-left-color: #22c55e; }
+            .student-header { border-bottom-color: #334155; }
+            .student-header h2 { color: #86efac; }
+            .student-header .code-info { color: #94a3b8; }
+            .summary-card { background: #0f172a; border-color: #334155; }
+            .summary-card .label { color: #94a3b8; }
+            .summary-card .value { color: #e2e8f0; }
+            .summary-card .value.balance { color: #f87171; }
+            .summary-card .value.positive { color: #4ade80; }
+            .fee-section-title { color: #e2e8f0; }
+            .fee-table th { background: #0f172a; color: #94a3b8; border-bottom-color: #334155; }
+            .fee-table td { border-bottom-color: #1e293b; color: #e2e8f0; }
+            .fee-table tr:active td { background: #1e293b; }
+            .error { background: #450a0a; border-left-color: #ef4444; color: #fca5a5; }
+            .footer { background: #1e293b; border-top-color: #334155; color: #64748b; }
+            .help-text { color: #94a3b8; }
+            .no-details { color: #94a3b8; }
         }
     </style>
 </head>
 <body>
     <div class="container" id="app">
         <header>
-            <h1>🏫 School Fee Portal</h1>
-            <p>3rd Term 2025-2026 • Secure Private Access</p>
+            <h1>
+                <span class="emoji">🏫</span>
+                Fee Portal
+            </h1>
+            <p>3rd Term 2025-2026</p>
         </header>
 
         <div class="form-section">
-            <h2>🔑 Enter Your Family Code</h2>
+            <h2>🔑 Enter Family Code</h2>
             <div class="input-group">
                 <input 
                     type="text" 
@@ -336,20 +498,24 @@
                     placeholder="e.g. ABAAB1000" 
                     maxlength="20"
                     autofocus
+                    inputmode="text"
+                    autocorrect="off"
+                    autocapitalize="characters"
+                    spellcheck="false"
                     onkeypress="if(event.key === 'Enter') checkCode()"
                 >
                 <button id="checkBtn" onclick="checkCode()">
-                    🔍 Check Details
+                    <span class="btn-icon">🔍</span> Check
                 </button>
             </div>
             <div class="help-text">
-                <small>Don't have a code? Contact the school administration.</small>
+                <small>Contact the school if you don't have a code</small>
             </div>
         </div>
 
         <div class="result-section" id="result">
-            <div style="text-align:center; color:#6c757d; padding:40px;">
-                <p style="font-size:1.1em;">👋 Enter your family code to view fee details</p>
+            <div style="text-align:center; color:#94a3b8; padding:30px 10px;">
+                <p style="font-size:1em;">👋 Enter your code to view fee details</p>
             </div>
         </div>
 
@@ -374,16 +540,6 @@
                 if (!res.ok) throw new Error('Failed to load data');
                 studentData = await res.json();
                 console.log('✅ Data loaded:', Object.keys(studentData).length, 'students');
-                
-                // Log sample student to see columns
-                const sampleKey = Object.keys(studentData)[0];
-                if (sampleKey) {
-                    const sample = studentData[sampleKey];
-                    const feeKeys = Object.keys(sample.details).filter(k => 
-                        !['LAST NAME', 'FIRST NAME', 'CLASS'].includes(k)
-                    );
-                    console.log('📋 Fee columns found:', feeKeys);
-                }
                 return true;
             } catch (e) {
                 console.error('Error loading data:', e);
@@ -412,22 +568,19 @@
             codeInput.disabled = true;
 
             try {
-                // Load data if not loaded
                 if (!studentData) {
                     const loaded = await loadData();
                     if (!loaded) {
-                        showError('Unable to load student data. Please try again later.', '⚠️');
+                        showError('Unable to load data. Please try again.', '⚠️');
                         return;
                     }
                 }
 
-                // Find student
                 const student = studentData[code];
                 
                 if (student) {
                     displayStudent(student, code);
                 } else {
-                    // Try case-insensitive search
                     const foundKey = Object.keys(studentData).find(
                         k => k.toUpperCase() === code
                     );
@@ -435,7 +588,7 @@
                         displayStudent(studentData[foundKey], foundKey);
                     } else {
                         showError(
-                            'Invalid family code. Please check and try again, or contact the school for assistance.',
+                            'Invalid family code. Please check and try again.',
                             '❓'
                         );
                     }
@@ -454,11 +607,9 @@
             const totalPaid = student.total_paid || 0;
             const balance = student.balance || 0;
             
-            // Get ALL fee columns from details (excluding the non-fee fields)
             const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS'];
             const feeKeys = Object.keys(student.details).filter(k => !excludeKeys.includes(k));
             
-            // Build details table - only show columns with values
             let detailsHtml = '';
             let hasValues = false;
             
@@ -466,18 +617,18 @@
                 const val = student.details[key];
                 if (val !== undefined && val !== null && val !== '' && val !== '0') {
                     const numVal = parseFloat(val);
-                    if (!isNaN(numVal)) {
+                    if (!isNaN(numVal) && numVal > 0) {
                         detailsHtml += `
                             <tr>
-                                <td>${key.replace(/_/g, ' ')}</td>
+                                <td class="category-name">${key.replace(/_/g, ' ')}</td>
                                 <td class="fee-amount">₦${numVal.toLocaleString()}</td>
                             </tr>
                         `;
                         hasValues = true;
-                    } else {
+                    } else if (isNaN(numVal) && val !== '0') {
                         detailsHtml += `
                             <tr>
-                                <td>${key.replace(/_/g, ' ')}</td>
+                                <td class="category-name">${key.replace(/_/g, ' ')}</td>
                                 <td class="fee-amount">${val}</td>
                             </tr>
                         `;
@@ -486,7 +637,6 @@
                 }
             }
 
-            // Determine balance class
             const balanceClass = balance > 0 ? 'balance' : (balance < 0 ? 'positive' : '');
 
             resultDiv.innerHTML = `
@@ -494,18 +644,18 @@
                     <div class="student-header">
                         <div>
                             <h2>✅ ${student.name}</h2>
-                            <div style="color:#6b7280; font-size:0.95em;">Code: ${code}</div>
+                            <div class="code-info">Code: ${code}</div>
                         </div>
                         <span class="class-badge">${student.class}</span>
                     </div>
                     
                     <div class="summary-cards">
                         <div class="summary-card">
-                            <div class="label">Total Fee</div>
+                            <div class="label">Total</div>
                             <div class="value">₦${totalFee.toLocaleString()}</div>
                         </div>
                         <div class="summary-card">
-                            <div class="label">Amount Paid</div>
+                            <div class="label">Paid</div>
                             <div class="value" style="color:#16a34a;">₦${totalPaid.toLocaleString()}</div>
                         </div>
                         <div class="summary-card">
@@ -515,8 +665,8 @@
                     </div>
                     
                     ${hasValues ? `
-                        <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown</h3>
-                        <div style="overflow-x:auto;">
+                        <div class="fee-section-title">📋 Fee Breakdown</div>
+                        <div class="fee-table-wrapper">
                             <table class="fee-table">
                                 <thead>
                                     <tr>
@@ -529,7 +679,7 @@
                                 </tbody>
                             </table>
                         </div>
-                    ` : '<p style="color:#6b7280; margin-top:15px;">No fee details available.</p>'}
+                    ` : '<div class="no-details">No fee details available.</div>'}
                 </div>
             `;
         }
@@ -537,8 +687,8 @@
         function showError(message, icon = '❌') {
             resultDiv.innerHTML = `
                 <div class="error">
-                    <div class="icon">${icon}</div>
-                    <p style="font-size:1.1em; font-weight:500;">${message}</p>
+                    <span class="icon">${icon}</span>
+                    <p>${message}</p>
                 </div>
             `;
         }
@@ -547,7 +697,10 @@
         loadData();
 
         // Focus input on load
-        codeInput.focus();
+        setTimeout(() => codeInput.focus(), 300);
+
+        // Handle touch events for better mobile feel
+        document.addEventListener('touchstart', function() {}, { passive: true });
     </script>
 </body>
 </html>
