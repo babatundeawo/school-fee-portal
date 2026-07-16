@@ -383,6 +383,16 @@
                 if (!res.ok) throw new Error('Failed to load data');
                 studentData = await res.json();
                 console.log('✅ Data loaded:', Object.keys(studentData).length, 'students');
+                
+                // Log sample student to see columns
+                const sampleKey = Object.keys(studentData)[0];
+                if (sampleKey) {
+                    const sample = studentData[sampleKey];
+                    const feeKeys = Object.keys(sample.details).filter(k => 
+                        !['LAST NAME', 'FIRST NAME', 'CLASS'].includes(k)
+                    );
+                    console.log('📋 Fee columns found:', feeKeys);
+                }
                 return true;
             } catch (e) {
                 console.error('Error loading data:', e);
@@ -453,55 +463,42 @@
             const totalPaid = student.total_paid || 0;
             const balance = student.balance || 0;
             
-            // All fee columns in order (J through AB)
-            const feeColumns = [
-                { key: 'AD_FORM', label: 'AD Form' },
-                { key: 'TUITION', label: 'Tuition' },
-                { key: 'PTA&EXAM', label: 'PTA & Exam' },
-                { key: 'REPORT_CARD', label: 'Report Card' },
-                { key: 'PRACTICAL', label: 'Practical' },
-                { key: 'TEXTBOOKS', label: 'Textbooks' },
-                { key: 'NB & STAT', label: 'NB & Stat' },
-                { key: 'UNIFORM', label: 'Uniform' },
-                { key: 'HOODY', label: 'Hoody' },
-                { key: 'SPORTSWEAR', label: 'Sportswear' },
-                { key: 'AFTERSCHOOL', label: 'Afterschool' },
-                { key: 'EXCURSION', label: 'Excursion' },
-                { key: 'EXTERNAL EXAMINATION', label: 'External Exam' },
-                { key: 'GRADUATION/ SPORTS/PARTY', label: 'Graduation/Sports/Party' },
-                { key: 'HOLIDAY LESSON', label: 'Holiday Lesson' },
-                { key: 'OUTSTANDING', label: 'Outstanding' }
-            ];
+            // Get ALL fee columns from details (excluding the non-fee fields)
+            const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS'];
+            const feeKeys = Object.keys(student.details).filter(k => !excludeKeys.includes(k));
             
             // Build details table
             let detailsHtml = '';
             let runningTotal = 0;
+            let hasValues = false;
             
-            for (const col of feeColumns) {
-                const val = student.details?.[col.key];
+            for (const key of feeKeys) {
+                const val = student.details[key];
                 if (val !== undefined && val !== null && val !== '' && val !== '0') {
                     const numVal = parseFloat(val);
                     if (!isNaN(numVal)) {
                         runningTotal += numVal;
                         detailsHtml += `
                             <tr>
-                                <td>${col.label}</td>
+                                <td>${key.replace(/_/g, ' ')}</td>
                                 <td class="fee-amount">₦${numVal.toLocaleString()}</td>
                             </tr>
                         `;
+                        hasValues = true;
                     } else {
                         detailsHtml += `
                             <tr>
-                                <td>${col.label}</td>
+                                <td>${key.replace(/_/g, ' ')}</td>
                                 <td class="fee-amount">${val}</td>
                             </tr>
                         `;
+                        hasValues = true;
                     }
                 }
             }
             
             // Add total row if there are details
-            if (detailsHtml) {
+            if (hasValues) {
                 detailsHtml += `
                     <tr class="total-row">
                         <td><strong>Subtotal (Breakdown)</strong></td>
@@ -542,8 +539,8 @@
                         </div>
                     </div>
                     
-                    ${detailsHtml ? `
-                        <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown</h3>
+                    ${hasValues ? `
+                        <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown (Columns J through AB)</h3>
                         <div style="overflow-x:auto;">
                             <table class="fee-table">
                                 <thead>
@@ -557,7 +554,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        ${runningTotal !== totalFee ? `
+                        ${Math.abs(runningTotal - totalFee) > 0.01 ? `
                             <div style="margin-top: 10px; padding: 10px; background: #fef3c7; border-radius: 8px; color: #92400e;">
                                 <strong>⚠️ Note:</strong> The breakdown subtotal (₦${runningTotal.toLocaleString()}) 
                                 differs from the total fee (₦${totalFee.toLocaleString()}). 
@@ -565,10 +562,14 @@
                             </div>
                         ` : `
                             <div style="margin-top: 10px; padding: 10px; background: #d1fae5; border-radius: 8px; color: #065f46;">
-                                ✅ The breakdown adds up to the total fee.
+                                ✅ All fee components add up to the total fee.
                             </div>
                         `}
                     ` : '<p style="color:#6b7280; margin-top:15px;">No fee details available.</p>'}
+                    
+                    <div style="margin-top: 15px; padding: 8px 12px; background: #f1f5f9; border-radius: 6px; font-size: 0.8em; color: #64748b;">
+                        📊 Showing ${feeKeys.length} fee columns from the spreadsheet
+                    </div>
                 </div>
             `;
         }

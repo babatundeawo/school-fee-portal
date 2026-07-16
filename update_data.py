@@ -18,34 +18,21 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
     df = pd.read_excel(excel_path, sheet_name='3RD TERM 2025-2026 (2)')
     df = df.iloc[:-1].fillna('')  # Remove total row
     
-    # ALL columns from J through AB (and some extras for reference)
-    # J: AD_FORM, K: TUITION, L: PTA&EXAM, M: REPORT_CARD, N: PRACTICAL
-    # O: TEXTBOOKS, P: NB & STAT, Q: UNIFORM, R: HOODY, S: SPORTSWEAR
-    # T: AFTERSCHOOL, U: EXCURSION, V: EXTERNAL EXAMINATION
-    # W: GRADUATION/ SPORTS/PARTY, X: HOLIDAY LESSON, Y: OUTSTANDING
-    # Z: TOTAL FEE, AA: TOTAL PAID, AB: BALANCE
+    # Get all column names from the dataframe
+    all_columns = list(df.columns)
+    print(f"📋 Found columns: {all_columns}")
     
-    fee_columns = [
-        'AD_FORM',           # J
-        'TUITION',           # K
-        'PTA&EXAM',          # L
-        'REPORT_CARD',       # M
-        'PRACTICAL',         # N
-        'TEXTBOOKS',         # O
-        'NB & STAT',         # P
-        'UNIFORM',           # Q
-        'HOODY',             # R
-        'SPORTSWEAR',        # S
-        'AFTERSCHOOL',       # T
-        'EXCURSION',         # U
-        'EXTERNAL EXAMINATION',  # V
-        'GRADUATION/ SPORTS/PARTY',  # W
-        'HOLIDAY LESSON',    # X
-        'OUTSTANDING',       # Y
-        'TOTAL FEE',         # Z
-        'TOTAL PAID',        # AA
-        'BALANCE'            # AB
-    ]
+    # Define the exact columns J through AB by position
+    # Since pandas uses 0-based indexing, column J is index 9, AB is index 27
+    # J=9, K=10, L=11, M=12, N=13, O=14, P=15, Q=16, R=17, S=18
+    # T=19, U=20, V=21, W=22, X=23, Y=24, Z=25, AA=26, AB=27
+    
+    # Get the actual column names at positions 9 through 27
+    fee_columns = all_columns[9:28]  # This gets columns J through AB (9 to 27 inclusive)
+    
+    print(f"📊 Fee columns (J through AB):")
+    for i, col in enumerate(fee_columns):
+        print(f"   Position {chr(74+i)} ({9+i}): '{col}'")
     
     # Generate codes
     df['code'] = df.apply(
@@ -55,7 +42,7 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
     
     # Build student data
     data = {}
-    for _, row in df.iterrows():
+    for idx, row in df.iterrows():
         # Get clean name
         name = f"{row['LAST NAME']} {row['FIRST NAME']}".strip()
         
@@ -66,80 +53,29 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
             except:
                 return 0
         
-        # Build details from columns J through AB
+        # Build details from columns J through AB ONLY
         details = {}
         for col in fee_columns:
             if col in row.index:
                 val = row[col]
+                # Store all values, even if they're 0 or empty
                 if str(val).strip():
-                    # Store as string but try to keep numeric format
                     details[col] = str(val)
                 else:
                     details[col] = '0'
         
-        # Add basic info
-        details['LAST NAME'] = str(row['LAST NAME'])
-        details['FIRST NAME'] = str(row['FIRST NAME'])
-        details['CLASS'] = str(row['CLASS'])
-        
-        # Calculate total from individual fee components
-        # This ensures the breakdown adds up to the total
-        tuition = safe_float(row.get('TUITION', 0))
-        pta_exam = safe_float(row.get('PTA&EXAM', 0))
-        report_card = safe_float(row.get('REPORT_CARD', 0))
-        practical = safe_float(row.get('PRACTICAL', 0))
-        textbooks = safe_float(row.get('TEXTBOOKS', 0))
-        nb_stat = safe_float(row.get('NB & STAT', 0))
-        uniform = safe_float(row.get('UNIFORM', 0))
-        hoody = safe_float(row.get('HOODY', 0))
-        sportswear = safe_float(row.get('SPORTSWEAR', 0))
-        afterschool = safe_float(row.get('AFTERSCHOOL', 0))
-        excursion = safe_float(row.get('EXCURSION', 0))
-        external_exam = safe_float(row.get('EXTERNAL EXAMINATION', 0))
-        graduation = safe_float(row.get('GRADUATION/ SPORTS/PARTY', 0))
-        holiday_lesson = safe_float(row.get('HOLIDAY LESSON', 0))
-        outstanding = safe_float(row.get('OUTSTANDING', 0))
-        ad_form = safe_float(row.get('AD_FORM', 0))
-        
-        # Calculate total from components
-        calculated_total = (
-            tuition + pta_exam + report_card + practical + 
-            textbooks + nb_stat + uniform + hoody + sportswear +
-            afterschool + excursion + external_exam + graduation +
-            holiday_lesson + outstanding + ad_form
-        )
-        
-        # Get the actual total from the sheet
-        actual_total = safe_float(row.get('TOTAL FEE', 0))
+        # Get totals from the sheet
+        total_fee = safe_float(row.get('TOTAL FEE', 0))
         total_paid = safe_float(row.get('TOTAL PAID', 0))
         balance = safe_float(row.get('BALANCE', 0))
         
         student = {
             'name': name,
             'class': row['CLASS'],
-            'total_fee': actual_total,
+            'total_fee': total_fee,
             'total_paid': total_paid,
             'balance': balance,
-            'details': details,
-            # Add calculated breakdown for verification
-            'breakdown': {
-                'tuition': tuition,
-                'pta_exam': pta_exam,
-                'report_card': report_card,
-                'practical': practical,
-                'textbooks': textbooks,
-                'nb_stat': nb_stat,
-                'uniform': uniform,
-                'hoody': hoody,
-                'sportswear': sportswear,
-                'afterschool': afterschool,
-                'excursion': excursion,
-                'external_exam': external_exam,
-                'graduation': graduation,
-                'holiday_lesson': holiday_lesson,
-                'outstanding': outstanding,
-                'ad_form': ad_form
-            }
+            'details': details
         }
         
         data[row['code']] = student
@@ -158,25 +94,29 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
     codes_df.to_excel('parent_codes.xlsx', index=False)
     
     # Print summary
-    print(f"✅ Updated {len(data)} students on {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    print(f"\n✅ Updated {len(data)} students on {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     print(f"📊 Total students: {len(data)}")
-    print(f"📋 Fee columns: {len(fee_columns)} columns")
+    print(f"📋 Fee columns: {len(fee_columns)} columns (J through AB)")
     print(f"🔑 Codes saved to parent_codes.xlsx")
     
-    # Show sample with breakdown
+    # Show sample with all fee columns
     if data:
         sample_code = list(data.keys())[0]
         sample = data[sample_code]
         print(f"\n📌 Sample: {sample_code} - {sample['name']}")
+        print(f"   Class: {sample['class']}")
         print(f"   Total Fee: ₦{sample['total_fee']:,.2f}")
         print(f"   Paid: ₦{sample['total_paid']:,.2f}")
         print(f"   Balance: ₦{sample['balance']:,.2f}")
-        
-        # Show breakdown
-        print(f"\n   Breakdown:")
-        for key, val in sample['breakdown'].items():
-            if val > 0:
-                print(f"     {key}: ₦{val:,.2f}")
+        print(f"\n   Fee Details (J through AB):")
+        for col in fee_columns:
+            val = sample['details'].get(col, '0')
+            if val != '0':
+                try:
+                    num_val = float(val)
+                    print(f"     {col}: ₦{num_val:,.2f}")
+                except:
+                    print(f"     {col}: {val}")
     
     return data
 
