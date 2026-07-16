@@ -1,15 +1,24 @@
-# School Fee Payment Portal
+# School Fee Portal - 3rd Term 2025-2026
 
-Private lookup system for 3rd Term 2025-2026 fees.
+**Secure private payment lookup system** for parents.
 
-## How to Use
-- Visit: `https://yourusername.github.io/school-fee-portal`
-- Parents enter their **unique family code**
-- Only their child's details are shown
+## 🚀 Live Website
+[Open Portal](https://babatundeawo.github.io/school-fee-portal)
 
-## For School Admin
-- Update `students.json` when fees change
-- Share codes from `parent_codes.xlsx` with parents
-- Never share the full JSON file publicly
+## How Parents Use It
+1. Go to the website
+2. Enter their **unique family code**
+3. View only their child's fee details
 
-Made with ❤️ for secure & private fee checking.
+## Features
+- ✅ Private & secure (code-based access)
+- ✅ Mobile friendly
+- ✅ Real-time balance display
+- ✅ Detailed fee breakdown
+
+## For School Admins
+- Update `students.json` when payments are made
+- Distribute codes using `parent_codes.xlsx`
+- Never share full data publicly
+
+**Made with ❤️**
