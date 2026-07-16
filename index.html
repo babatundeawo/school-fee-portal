@@ -24,7 +24,7 @@
         }
         
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             width: 100%;
             margin: 20px auto;
             background: white;
@@ -444,26 +444,42 @@
             const totalPaid = student.total_paid || 0;
             const balance = student.balance || 0;
             
+            // Define the columns we want to display (J through AB)
+            // This is the exact order from your Excel
+            const displayColumns = [
+                'AD_FORM',
+                'TUITION',
+                'PTA&EXAM',
+                'REPORT_CARD',
+                'PRACTICAL',
+                'TEXTBOOKS',
+                'NB & STAT',
+                'UNIFORM',
+                'HOODY',
+                'SPORTSWEAR',
+                'AFTERSCHOOL',
+                'EXCURSION',
+                'EXTERNAL EXAMINATION',
+                'GRADUATION/ SPORTS/PARTY',
+                'HOLIDAY LESSON',
+                'OUTSTANDING'
+            ];
+            
             // Build details table
             let detailsHtml = '';
-            const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS', 'TOTAL FEE', 'TOTAL PAID', 'BALANCE', 'code'];
             
-            // Filter and sort details
-            const detailItems = Object.entries(student.details || {})
-                .filter(([key, val]) => {
-                    if (excludeKeys.includes(key.toUpperCase())) return false;
+            for (const col of displayColumns) {
+                const val = student.details?.[col];
+                if (val !== undefined && val !== null && val !== '' && val !== '0') {
                     const numVal = parseFloat(val);
-                    return !isNaN(numVal) && numVal > 0 && val !== '' && val !== '0';
-                })
-                .sort((a, b) => a[0].localeCompare(b[0]));
-            
-            if (detailItems.length > 0) {
-                detailsHtml = detailItems.map(([key, val]) => `
-                    <tr>
-                        <td>${key.replace(/_/g, ' ')}</td>
-                        <td class="fee-amount">₦${parseFloat(val).toLocaleString()}</td>
-                    </tr>
-                `).join('');
+                    const displayVal = !isNaN(numVal) ? `₦${numVal.toLocaleString()}` : val;
+                    detailsHtml += `
+                        <tr>
+                            <td>${col.replace(/_/g, ' ')}</td>
+                            <td class="fee-amount">${displayVal}</td>
+                        </tr>
+                    `;
+                }
             }
 
             // Determine balance class
@@ -494,14 +510,14 @@
                         </div>
                     </div>
                     
-                    ${detailItems.length > 0 ? `
+                    ${detailsHtml ? `
                         <h3 style="margin:25px 0 10px; color:#1e293b;">📋 Fee Breakdown</h3>
                         <div style="overflow-x:auto;">
                             <table class="fee-table">
                                 <thead>
                                     <tr>
                                         <th>Category</th>
-                                        <th style="text-align:right;">Amount (₦)</th>
+                                        <th style="text-align:right;">Amount</th>
                                     </tr>
                                 </thead>
                                 <tbody>
