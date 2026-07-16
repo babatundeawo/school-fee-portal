@@ -18,15 +18,13 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
     df = pd.read_excel(excel_path, sheet_name='3RD TERM 2025-2026 (2)')
     df = df.iloc[:-1].fillna('')  # Remove total row
     
-    # Define the columns we want (J through AB)
-    # Based on your Excel columns:
+    # ALL columns from J through AB (and some extras for reference)
     # J: AD_FORM, K: TUITION, L: PTA&EXAM, M: REPORT_CARD, N: PRACTICAL
     # O: TEXTBOOKS, P: NB & STAT, Q: UNIFORM, R: HOODY, S: SPORTSWEAR
     # T: AFTERSCHOOL, U: EXCURSION, V: EXTERNAL EXAMINATION
     # W: GRADUATION/ SPORTS/PARTY, X: HOLIDAY LESSON, Y: OUTSTANDING
     # Z: TOTAL FEE, AA: TOTAL PAID, AB: BALANCE
     
-    # Column mapping (Excel column letter -> column name)
     fee_columns = [
         'AD_FORM',           # J
         'TUITION',           # K
@@ -49,10 +47,6 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
         'BALANCE'            # AB
     ]
     
-    # Also keep these for reference but not in details
-    # A: LAST NAME, B: FIRST NAME, C: CLASS, D: DISCOUNT, E: AD-FORM
-    # F: FULL TUITION, G: PTA/EXAM, H: REPORT CARD, I: PRACTICALS
-    
     # Generate codes
     df['code'] = df.apply(
         lambda row: generate_code(row['LAST NAME'], row['FIRST NAME'], row.name),
@@ -72,32 +66,80 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
             except:
                 return 0
         
-        # Build details from columns J through AB only
+        # Build details from columns J through AB
         details = {}
         for col in fee_columns:
-            if col in row.index and str(row[col]).strip():
+            if col in row.index:
                 val = row[col]
-                # Try to format as number if it's numeric
-                try:
-                    if isinstance(val, (int, float)):
-                        details[col] = str(val)
-                    else:
-                        details[col] = str(val)
-                except:
+                if str(val).strip():
+                    # Store as string but try to keep numeric format
                     details[col] = str(val)
+                else:
+                    details[col] = '0'
         
-        # Add basic info to details (for reference)
+        # Add basic info
         details['LAST NAME'] = str(row['LAST NAME'])
         details['FIRST NAME'] = str(row['FIRST NAME'])
         details['CLASS'] = str(row['CLASS'])
         
+        # Calculate total from individual fee components
+        # This ensures the breakdown adds up to the total
+        tuition = safe_float(row.get('TUITION', 0))
+        pta_exam = safe_float(row.get('PTA&EXAM', 0))
+        report_card = safe_float(row.get('REPORT_CARD', 0))
+        practical = safe_float(row.get('PRACTICAL', 0))
+        textbooks = safe_float(row.get('TEXTBOOKS', 0))
+        nb_stat = safe_float(row.get('NB & STAT', 0))
+        uniform = safe_float(row.get('UNIFORM', 0))
+        hoody = safe_float(row.get('HOODY', 0))
+        sportswear = safe_float(row.get('SPORTSWEAR', 0))
+        afterschool = safe_float(row.get('AFTERSCHOOL', 0))
+        excursion = safe_float(row.get('EXCURSION', 0))
+        external_exam = safe_float(row.get('EXTERNAL EXAMINATION', 0))
+        graduation = safe_float(row.get('GRADUATION/ SPORTS/PARTY', 0))
+        holiday_lesson = safe_float(row.get('HOLIDAY LESSON', 0))
+        outstanding = safe_float(row.get('OUTSTANDING', 0))
+        ad_form = safe_float(row.get('AD_FORM', 0))
+        
+        # Calculate total from components
+        calculated_total = (
+            tuition + pta_exam + report_card + practical + 
+            textbooks + nb_stat + uniform + hoody + sportswear +
+            afterschool + excursion + external_exam + graduation +
+            holiday_lesson + outstanding + ad_form
+        )
+        
+        # Get the actual total from the sheet
+        actual_total = safe_float(row.get('TOTAL FEE', 0))
+        total_paid = safe_float(row.get('TOTAL PAID', 0))
+        balance = safe_float(row.get('BALANCE', 0))
+        
         student = {
             'name': name,
             'class': row['CLASS'],
-            'total_fee': safe_float(row.get('TOTAL FEE', 0)),
-            'total_paid': safe_float(row.get('TOTAL PAID', 0)),
-            'balance': safe_float(row.get('BALANCE', 0)),
-            'details': details
+            'total_fee': actual_total,
+            'total_paid': total_paid,
+            'balance': balance,
+            'details': details,
+            # Add calculated breakdown for verification
+            'breakdown': {
+                'tuition': tuition,
+                'pta_exam': pta_exam,
+                'report_card': report_card,
+                'practical': practical,
+                'textbooks': textbooks,
+                'nb_stat': nb_stat,
+                'uniform': uniform,
+                'hoody': hoody,
+                'sportswear': sportswear,
+                'afterschool': afterschool,
+                'excursion': excursion,
+                'external_exam': external_exam,
+                'graduation': graduation,
+                'holiday_lesson': holiday_lesson,
+                'outstanding': outstanding,
+                'ad_form': ad_form
+            }
         }
         
         data[row['code']] = student
@@ -121,7 +163,7 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
     print(f"📋 Fee columns: {len(fee_columns)} columns")
     print(f"🔑 Codes saved to parent_codes.xlsx")
     
-    # Show sample
+    # Show sample with breakdown
     if data:
         sample_code = list(data.keys())[0]
         sample = data[sample_code]
@@ -129,7 +171,12 @@ def update_school_data(excel_path='2025-2026 SHARED FEE.xlsx'):
         print(f"   Total Fee: ₦{sample['total_fee']:,.2f}")
         print(f"   Paid: ₦{sample['total_paid']:,.2f}")
         print(f"   Balance: ₦{sample['balance']:,.2f}")
-        print(f"   Details: {len(sample['details'])} fields")
+        
+        # Show breakdown
+        print(f"\n   Breakdown:")
+        for key, val in sample['breakdown'].items():
+            if val > 0:
+                print(f"     {key}: ₦{val:,.2f}")
     
     return data
 

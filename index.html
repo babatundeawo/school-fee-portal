@@ -285,6 +285,15 @@
             font-weight: 500;
         }
         
+        .fee-table .total-row {
+            background: #f1f5f9;
+            font-weight: 700;
+        }
+        
+        .fee-table .total-row td {
+            border-top: 2px solid #94a3b8;
+        }
+        
         .footer {
             text-align: center;
             padding: 20px;
@@ -444,42 +453,65 @@
             const totalPaid = student.total_paid || 0;
             const balance = student.balance || 0;
             
-            // Define the columns we want to display (J through AB)
-            // This is the exact order from your Excel
-            const displayColumns = [
-                'AD_FORM',
-                'TUITION',
-                'PTA&EXAM',
-                'REPORT_CARD',
-                'PRACTICAL',
-                'TEXTBOOKS',
-                'NB & STAT',
-                'UNIFORM',
-                'HOODY',
-                'SPORTSWEAR',
-                'AFTERSCHOOL',
-                'EXCURSION',
-                'EXTERNAL EXAMINATION',
-                'GRADUATION/ SPORTS/PARTY',
-                'HOLIDAY LESSON',
-                'OUTSTANDING'
+            // All fee columns in order (J through AB)
+            const feeColumns = [
+                { key: 'AD_FORM', label: 'AD Form' },
+                { key: 'TUITION', label: 'Tuition' },
+                { key: 'PTA&EXAM', label: 'PTA & Exam' },
+                { key: 'REPORT_CARD', label: 'Report Card' },
+                { key: 'PRACTICAL', label: 'Practical' },
+                { key: 'TEXTBOOKS', label: 'Textbooks' },
+                { key: 'NB & STAT', label: 'NB & Stat' },
+                { key: 'UNIFORM', label: 'Uniform' },
+                { key: 'HOODY', label: 'Hoody' },
+                { key: 'SPORTSWEAR', label: 'Sportswear' },
+                { key: 'AFTERSCHOOL', label: 'Afterschool' },
+                { key: 'EXCURSION', label: 'Excursion' },
+                { key: 'EXTERNAL EXAMINATION', label: 'External Exam' },
+                { key: 'GRADUATION/ SPORTS/PARTY', label: 'Graduation/Sports/Party' },
+                { key: 'HOLIDAY LESSON', label: 'Holiday Lesson' },
+                { key: 'OUTSTANDING', label: 'Outstanding' }
             ];
             
             // Build details table
             let detailsHtml = '';
+            let runningTotal = 0;
             
-            for (const col of displayColumns) {
-                const val = student.details?.[col];
+            for (const col of feeColumns) {
+                const val = student.details?.[col.key];
                 if (val !== undefined && val !== null && val !== '' && val !== '0') {
                     const numVal = parseFloat(val);
-                    const displayVal = !isNaN(numVal) ? `₦${numVal.toLocaleString()}` : val;
-                    detailsHtml += `
-                        <tr>
-                            <td>${col.replace(/_/g, ' ')}</td>
-                            <td class="fee-amount">${displayVal}</td>
-                        </tr>
-                    `;
+                    if (!isNaN(numVal)) {
+                        runningTotal += numVal;
+                        detailsHtml += `
+                            <tr>
+                                <td>${col.label}</td>
+                                <td class="fee-amount">₦${numVal.toLocaleString()}</td>
+                            </tr>
+                        `;
+                    } else {
+                        detailsHtml += `
+                            <tr>
+                                <td>${col.label}</td>
+                                <td class="fee-amount">${val}</td>
+                            </tr>
+                        `;
+                    }
                 }
+            }
+            
+            // Add total row if there are details
+            if (detailsHtml) {
+                detailsHtml += `
+                    <tr class="total-row">
+                        <td><strong>Subtotal (Breakdown)</strong></td>
+                        <td class="fee-amount"><strong>₦${runningTotal.toLocaleString()}</strong></td>
+                    </tr>
+                    <tr class="total-row">
+                        <td><strong>Total Fee (from sheet)</strong></td>
+                        <td class="fee-amount"><strong>₦${totalFee.toLocaleString()}</strong></td>
+                    </tr>
+                `;
             }
 
             // Determine balance class
@@ -525,7 +557,18 @@
                                 </tbody>
                             </table>
                         </div>
-                    ` : '<p style="color:#6b7280; margin-top:15px;">No additional fee details available.</p>'}
+                        ${runningTotal !== totalFee ? `
+                            <div style="margin-top: 10px; padding: 10px; background: #fef3c7; border-radius: 8px; color: #92400e;">
+                                <strong>⚠️ Note:</strong> The breakdown subtotal (₦${runningTotal.toLocaleString()}) 
+                                differs from the total fee (₦${totalFee.toLocaleString()}). 
+                                This may include additional fees not shown in the breakdown.
+                            </div>
+                        ` : `
+                            <div style="margin-top: 10px; padding: 10px; background: #d1fae5; border-radius: 8px; color: #065f46;">
+                                ✅ The breakdown adds up to the total fee.
+                            </div>
+                        `}
+                    ` : '<p style="color:#6b7280; margin-top:15px;">No fee details available.</p>'}
                 </div>
             `;
         }

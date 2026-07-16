@@ -24,6 +24,24 @@
       "LAST NAME": "ABASS",
       "FIRST NAME": "ABDULJAMAL TOHEEB",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 50340.0,
+      "ad_form": 0
     }
   },
   "ABDABD1001": {
@@ -51,6 +69,24 @@
       "LAST NAME": "ABDULAZEEZ",
       "FIRST NAME": "ABDULLAH",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 8000.0,
+      "sportswear": 7000.0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ABDFIR1002": {
@@ -78,6 +114,24 @@
       "LAST NAME": "ABDULAZEEZ",
       "FIRST NAME": "FIRDAOS",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 20000.0,
+      "hoody": 8000.0,
+      "sportswear": 7000.0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ABDMUH1003": {
@@ -105,6 +159,24 @@
       "LAST NAME": "ABDULLATEEF",
       "FIRST NAME": "MUHAMMED",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 40000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 8000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3030.0,
+      "ad_form": 0
     }
   },
   "ABIAL1004": {
@@ -132,6 +204,24 @@
       "LAST NAME": "ABIDOYE",
       "FIRST NAME": "AL-AMEER OLUWAJOMILOJU",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ABISUL1005": {
@@ -159,6 +249,24 @@
       "LAST NAME": "ABIDOYE",
       "FIRST NAME": "SULTAN ORODE",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ABIDAN1006": {
@@ -186,6 +294,24 @@
       "LAST NAME": "ABIODUN",
       "FIRST NAME": "DANIEL OBANIJESU",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 6910.0,
+      "ad_form": 0
     }
   },
   "ABISHA1007": {
@@ -213,6 +339,24 @@
       "LAST NAME": "ABIODUN",
       "FIRST NAME": "SHARON ADELEWA",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 20090.0,
+      "ad_form": 0
     }
   },
   "ABICHA1008": {
@@ -240,6 +384,24 @@
       "LAST NAME": "ABIODUN",
       "FIRST NAME": "CHARIS ADEEWA",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 26630.0,
+      "ad_form": 0
     }
   },
   "ABIIVA1009": {
@@ -267,6 +429,24 @@
       "LAST NAME": "ABIODUN",
       "FIRST NAME": "IVANA ADESEWA",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 28805.0,
+      "ad_form": 0
     }
   },
   "ADEELI1010": {
@@ -294,6 +474,24 @@
       "LAST NAME": "ADEBOYE",
       "FIRST NAME": "ELIZABETH",
       "CLASS": "JUNIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 24750.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ADEENI1011": {
@@ -321,6 +519,24 @@
       "LAST NAME": "ADEBOYE",
       "FIRST NAME": "ENIOLA ESTHER",
       "CLASS": "JUNIOR SECONDARY SCHOOL 3"
+    },
+    "breakdown": {
+      "tuition": 24750.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 7500.0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 9290.0,
+      "ad_form": 0
     }
   },
   "ADEADE1012": {
@@ -348,6 +564,24 @@
       "LAST NAME": "ADEBUNMI",
       "FIRST NAME": "ADEYEMI",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 13000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": -10030.0,
+      "ad_form": 0
     }
   },
   "ADEADE1013": {
@@ -375,6 +609,24 @@
       "LAST NAME": "ADEBUNMI",
       "FIRST NAME": "ADEOLUWA",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 14000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 2500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ADEIRE1014": {
@@ -402,6 +654,24 @@
       "LAST NAME": "ADEDAMOLA",
       "FIRST NAME": "IREMIDE",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ADEDOR1015": {
@@ -429,6 +699,24 @@
       "LAST NAME": "ADEDAYO",
       "FIRST NAME": "DORCAS ADEMIDE",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ADEDEB1016": {
@@ -456,6 +744,24 @@
       "LAST NAME": "ADEDAYO",
       "FIRST NAME": "DEBORAH ADESIRE",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ADEMOJ1017": {
@@ -483,6 +789,24 @@
       "LAST NAME": "ADEDOJA",
       "FIRST NAME": "MOJEREOLUWA PROSPER",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ADEFAI1018": {
@@ -510,6 +834,24 @@
       "LAST NAME": "ADEDOJA",
       "FIRST NAME": "FAITH MORAYOOLUWA",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ADEPRA1019": {
@@ -537,6 +879,24 @@
       "LAST NAME": "ADEDOJA",
       "FIRST NAME": "PRAISE",
       "CLASS": "PRIMARY 4"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ADEMUM1020": {
@@ -564,6 +924,24 @@
       "LAST NAME": "ADEKUNLE",
       "FIRST NAME": "MUMINAT ADEBOLA",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 2500.0,
+      "ad_form": 0
     }
   },
   "ADEPRO1021": {
@@ -591,6 +969,24 @@
       "LAST NAME": "ADELOYE",
       "FIRST NAME": "PROSPER",
       "CLASS": "JUNIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 23100.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4200.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7000.0,
+      "ad_form": 0
     }
   },
   "ADEDAN1022": {
@@ -618,6 +1014,24 @@
       "LAST NAME": "ADELOYE",
       "FIRST NAME": "DANIEL",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ADEEMM1023": {
@@ -645,6 +1059,24 @@
       "LAST NAME": "ADELOYE",
       "FIRST NAME": "EMMANUEL",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ADESAM1024": {
@@ -672,6 +1104,24 @@
       "LAST NAME": "ADENIYI",
       "FIRST NAME": "SAMUEL DEMILADE",
       "CLASS": "JUNIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 24750.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7750.0,
+      "ad_form": 0
     }
   },
   "ADEHER1025": {
@@ -699,6 +1149,24 @@
       "LAST NAME": "ADENIYI",
       "FIRST NAME": "HERITAGE ADEDOYIN",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ADEABD1026": {
@@ -726,6 +1194,24 @@
       "LAST NAME": "ADENIYI",
       "FIRST NAME": "ABDULQUDUS",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 25100.0,
+      "ad_form": 0
     }
   },
   "ADEHAS1027": {
@@ -753,6 +1239,24 @@
       "LAST NAME": "ADEYANJU",
       "FIRST NAME": "HASBULLAH OKIKIOLA",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -1000.0,
+      "ad_form": 0
     }
   },
   "ADEMOD1028": {
@@ -780,6 +1284,24 @@
       "LAST NAME": "ADEYEMI",
       "FIRST NAME": "MODADEOBA GBOLAHAN",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7000.0,
+      "ad_form": 0
     }
   },
   "ADEADE1029": {
@@ -807,6 +1329,24 @@
       "LAST NAME": "ADEYEMI",
       "FIRST NAME": "ADETOLA PRINCESS",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 40000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 8000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ADIAHN1030": {
@@ -834,6 +1374,24 @@
       "LAST NAME": "ADIGUN",
       "FIRST NAME": "AHNAF ARAOLA",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "AJAIKE1031": {
@@ -861,6 +1419,24 @@
       "LAST NAME": "AJAGBE",
       "FIRST NAME": "IKEOLUWA",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 6000.0,
+      "ad_form": 0
     }
   },
   "AJAOLU1032": {
@@ -888,6 +1464,24 @@
       "LAST NAME": "AJAGBE",
       "FIRST NAME": "OLUWAKOREDE",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 31895.0,
+      "ad_form": 0
     }
   },
   "AJADES1033": {
@@ -915,6 +1509,24 @@
       "LAST NAME": "AJAYI",
       "FIRST NAME": "DESIRE HALLELUYAH",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "AKAMIC1034": {
@@ -942,6 +1554,24 @@
       "LAST NAME": "AKANDE",
       "FIRST NAME": "MICHELLE OREOFE",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "AKAZIO1035": {
@@ -969,6 +1599,24 @@
       "LAST NAME": "AKANDE",
       "FIRST NAME": "ZION AYANFE",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -25.0,
+      "ad_form": 0
     }
   },
   "AKIDEB1036": {
@@ -996,6 +1644,24 @@
       "LAST NAME": "AKINBOSOYE",
       "FIRST NAME": "DEBORAH OLUWADARA",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "AKIDAN1037": {
@@ -1023,6 +1689,24 @@
       "LAST NAME": "AKINBOSOYE",
       "FIRST NAME": "DANIEL IYANUOLUWA",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 9000.0,
+      "ad_form": 0
     }
   },
   "AKIGAB1038": {
@@ -1050,6 +1734,24 @@
       "LAST NAME": "AKINDURO",
       "FIRST NAME": "GABRIELLA OLUWAFIREWAMIRI",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 2000.0,
+      "ad_form": 0
     }
   },
   "AKIDAN1039": {
@@ -1077,6 +1779,24 @@
       "LAST NAME": "AKINYEMI",
       "FIRST NAME": "DANIEL",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ALAADE1040": {
@@ -1104,6 +1824,24 @@
       "LAST NAME": "ALABI",
       "FIRST NAME": "ADEKUNLE",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "ALAAFO1041": {
@@ -1131,6 +1869,24 @@
       "LAST NAME": "ALADESAYE",
       "FIRST NAME": "AFOLAHANMI VINCENT",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "ALIBOL1042": {
@@ -1158,6 +1914,24 @@
       "LAST NAME": "ALIDU",
       "FIRST NAME": "BOLANLE AZEEZAT",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3030.0,
+      "ad_form": 0
     }
   },
   "AWOJOS1043": {
@@ -1185,6 +1959,24 @@
       "LAST NAME": "AWODOLA",
       "FIRST NAME": "JOSHUA AYOMIDE",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 33000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 6000.0,
+      "textbooks": 0,
+      "nb_stat": 1500.0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7030.0,
+      "ad_form": 0
     }
   },
   "AYEPRE1044": {
@@ -1212,6 +2004,24 @@
       "LAST NAME": "AYEDUN",
       "FIRST NAME": "PRECIOUS OGOMIDE",
       "CLASS": "SENIOR SECONDARY SCHOOL 3"
+    },
+    "breakdown": {
+      "tuition": 20000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 20000.0,
+      "holiday_lesson": 0,
+      "outstanding": 14220.0,
+      "ad_form": 0
     }
   },
   "AYOSAN1045": {
@@ -1239,6 +2049,24 @@
       "LAST NAME": "AYODELE",
       "FIRST NAME": "SANDRA OLUWATOBILOBA",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 40000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 8000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 120.0,
+      "ad_form": 0
     }
   },
   "BABBRI1046": {
@@ -1266,6 +2094,24 @@
       "LAST NAME": "BABALOLA",
       "FIRST NAME": "BRIDGET OLADOYIN",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -20.0,
+      "ad_form": 0
     }
   },
   "BAKBEA1047": {
@@ -1293,6 +2139,24 @@
       "LAST NAME": "BAKARE",
       "FIRST NAME": "BEAUTY OLABISI",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 24750.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "BAKPRI1048": {
@@ -1320,6 +2184,24 @@
       "LAST NAME": "BAKARE",
       "FIRST NAME": "PRINCESS BEWAJI",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 30000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 6000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "BENGRA1049": {
@@ -1347,6 +2229,24 @@
       "LAST NAME": "BENJAMIN",
       "FIRST NAME": "GRANT",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 8000.0,
+      "sportswear": 7000.0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "DANDEB1050": {
@@ -1374,6 +2274,24 @@
       "LAST NAME": "DANIEL",
       "FIRST NAME": "DEBORAH IYANUOLUWA",
       "CLASS": "SENIOR SECONDARY SCHOOL 3"
+    },
+    "breakdown": {
+      "tuition": 18000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 20000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "DAVOLU1051": {
@@ -1401,6 +2319,24 @@
       "LAST NAME": "DAVID",
       "FIRST NAME": "OLUWADARASIMI",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 8000.0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -2000.0,
+      "ad_form": 0
     }
   },
   "DAVJES1052": {
@@ -1428,6 +2364,24 @@
       "LAST NAME": "DAVID",
       "FIRST NAME": "JESUTOFUNMI DARA",
       "CLASS": "PRIMARY 4"
+    },
+    "breakdown": {
+      "tuition": 28000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 5000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "EDEZEN1053": {
@@ -1455,6 +2409,24 @@
       "LAST NAME": "EDEM",
       "FIRST NAME": "ZENITH AYOKUNNUMI",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 3000.0,
+      "ad_form": 0
     }
   },
   "EMMRUT1054": {
@@ -1482,6 +2454,24 @@
       "LAST NAME": "EMMANUEL",
       "FIRST NAME": "RUTH OLADIPUPO",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "EMOJUL1055": {
@@ -1509,6 +2499,24 @@
       "LAST NAME": "EMORDI",
       "FIRST NAME": "JULIAN KOLADE",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 22405.0,
+      "ad_form": 0
     }
   },
   "EMOJAP1056": {
@@ -1536,6 +2544,24 @@
       "LAST NAME": "EMORDI",
       "FIRST NAME": "JAPHETH ENIOLA",
       "CLASS": "PRIMARY 4"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 23645.0,
+      "ad_form": 0
     }
   },
   "ERIOLU1057": {
@@ -1563,6 +2589,24 @@
       "LAST NAME": "ERIC",
       "FIRST NAME": "OLUWASHINDARA FLOURISH",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "FAGASE1058": {
@@ -1590,6 +2634,24 @@
       "LAST NAME": "FAGBAYI",
       "FIRST NAME": "ASEOLUWA JOSHUA",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "FEYJAD1059": {
@@ -1617,6 +2679,24 @@
       "LAST NAME": "FEYIJIMI",
       "FIRST NAME": "JADEN OLAOLUWA",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "FEYLOI1060": {
@@ -1644,6 +2724,24 @@
       "LAST NAME": "FEYIJIMI",
       "FIRST NAME": "LOIS INIOLUWA",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "FRAGRA1061": {
@@ -1671,6 +2769,24 @@
       "LAST NAME": "FRANKLIN",
       "FIRST NAME": "GRACE-ANN ITSHOGHENE",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "GANJOS1062": {
@@ -1698,6 +2814,24 @@
       "LAST NAME": "GANFO",
       "FIRST NAME": "JOSHUA OLAMIDE",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "GANOLU1063": {
@@ -1725,6 +2859,24 @@
       "LAST NAME": "GANIYU",
       "FIRST NAME": "OLUWAJUEDALO FARHAN",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 8000.0,
+      "sportswear": 7000.0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "HAMZAI1064": {
@@ -1752,6 +2904,24 @@
       "LAST NAME": "HAMMED",
       "FIRST NAME": "ZAINAB ENIOLA",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 2550.0,
+      "ad_form": 0
     }
   },
   "IBIFEL1065": {
@@ -1779,6 +2949,24 @@
       "LAST NAME": "IBITOYE",
       "FIRST NAME": "FELIX TIWATOPE",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 28000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 5000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 9000.0,
+      "ad_form": 0
     }
   },
   "IGEOLU1066": {
@@ -1806,6 +2994,24 @@
       "LAST NAME": "IGE",
       "FIRST NAME": "OLUWAFERANMI BRIDGET",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "IGEOLU1067": {
@@ -1833,6 +3039,24 @@
       "LAST NAME": "IGE",
       "FIRST NAME": "OLUWAFEMI BRIGHT",
       "CLASS": "PRIMARY 3"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3250.0,
+      "ad_form": 0
     }
   },
   "ISSIMO1068": {
@@ -1860,6 +3084,24 @@
       "LAST NAME": "ISSAH",
       "FIRST NAME": "IMOLE",
       "CLASS": "JUNIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 33000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 6000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -2870.0,
+      "ad_form": 0
     }
   },
   "JAMFAI1069": {
@@ -1887,6 +3129,24 @@
       "LAST NAME": "JAMIU",
       "FIRST NAME": "FAIZAH AYANFE",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 13000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": 25200.0,
+      "ad_form": 0
     }
   },
   "JOHMIC1070": {
@@ -1914,6 +3174,24 @@
       "LAST NAME": "JOHN",
       "FIRST NAME": "MICHAEL",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 13000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 8000.0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "JOHMIS1071": {
@@ -1941,6 +3219,24 @@
       "LAST NAME": "JOHN",
       "FIRST NAME": "MISHAEL",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 13000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 8000.0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "JOHJED1072": {
@@ -1968,6 +3264,24 @@
       "LAST NAME": "JOHN",
       "FIRST NAME": "JEDIDAH",
       "CLASS": "PRIMARY 3"
+    },
+    "breakdown": {
+      "tuition": 14000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 2500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 8000.0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": 1580.0,
+      "ad_form": 0
     }
   },
   "KELAZE1073": {
@@ -1995,6 +3309,24 @@
       "LAST NAME": "KELANI",
       "FIRST NAME": "AZEEZAH ADEJARE",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "KOLJOS1074": {
@@ -2022,6 +3354,24 @@
       "LAST NAME": "KOLADE",
       "FIRST NAME": "JOSHUA IDEMUDIA",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "KOLJEM1075": {
@@ -2049,6 +3399,24 @@
       "LAST NAME": "KOLADE",
       "FIRST NAME": "JEMIMAH AYOMIDE",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3500.0,
+      "ad_form": 0
     }
   },
   "KOLGAB1076": {
@@ -2076,6 +3444,24 @@
       "LAST NAME": "KOLAWOLE",
       "FIRST NAME": "GABRIEL",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7700.0,
+      "ad_form": 0
     }
   },
   "KOLSTE1077": {
@@ -2103,6 +3489,24 @@
       "LAST NAME": "KOLAWOLE",
       "FIRST NAME": "STEPHEN",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 8000.0,
+      "ad_form": 0
     }
   },
   "KONUMA1078": {
@@ -2130,6 +3534,24 @@
       "LAST NAME": "KONNEH",
       "FIRST NAME": "UMAR IREBAMI",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "KONAYI1079": {
@@ -2157,6 +3579,24 @@
       "LAST NAME": "KONNEH",
       "FIRST NAME": "AYISHA GOLD",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 55.0,
+      "ad_form": 0
     }
   },
   "LATJOH1080": {
@@ -2184,6 +3624,24 @@
       "LAST NAME": "LATEEF",
       "FIRST NAME": "JOHN-D-BELOVED OLAMILEKAN",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 10235.0,
+      "ad_form": 0
     }
   },
   "MOSHEP1081": {
@@ -2211,6 +3669,24 @@
       "LAST NAME": "MOSES",
       "FIRST NAME": "HEPHZIBAH TOLUWALASE",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 8000.0,
+      "sportswear": 7000.0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "MUTIBR1082": {
@@ -2238,6 +3714,24 @@
       "LAST NAME": "MUTAIRU",
       "FIRST NAME": "IBRAHIM GBOLAHAN",
       "CLASS": "JUNIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 23100.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4200.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "MUTISM1083": {
@@ -2265,6 +3759,24 @@
       "LAST NAME": "MUTAIRU",
       "FIRST NAME": "ISMAIL ABIODUN",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "MUTMAR1084": {
@@ -2292,6 +3804,24 @@
       "LAST NAME": "MUTAIRU",
       "FIRST NAME": "MARIAM OMOSHALEWA",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3500.0,
+      "ad_form": 0
     }
   },
   "NELHAR1085": {
@@ -2319,6 +3849,24 @@
       "LAST NAME": "NELSON",
       "FIRST NAME": "HARRY EMMANUEL OBALOLUWA",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 26000.0,
+      "ad_form": 0
     }
   },
   "OBETAI1086": {
@@ -2346,6 +3894,24 @@
       "LAST NAME": "OBEY",
       "FIRST NAME": "TAIWO EYITAYO",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 17700.0,
+      "ad_form": 0
     }
   },
   "OBEKEH1087": {
@@ -2373,6 +3939,24 @@
       "LAST NAME": "OBEY",
       "FIRST NAME": "KEHINDE AYOLEYI",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 17700.0,
+      "ad_form": 0
     }
   },
   "OKEJUM1088": {
@@ -2400,6 +3984,24 @@
       "LAST NAME": "OKERINDE",
       "FIRST NAME": "JUMAIN BOLUWATIFE",
       "CLASS": "SENIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 30000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 6000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 30070.0,
+      "ad_form": 0
     }
   },
   "OKEQUD1089": {
@@ -2427,6 +4029,24 @@
       "LAST NAME": "OKERINDE",
       "FIRST NAME": "QUDUS OLAMILEKAN",
       "CLASS": "SENIOR SECONDARY SCHOOL 3"
+    },
+    "breakdown": {
+      "tuition": 15000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 20000.0,
+      "holiday_lesson": 0,
+      "outstanding": 13260.0,
+      "ad_form": 0
     }
   },
   "OLAJEM1090": {
@@ -2454,6 +4074,24 @@
       "LAST NAME": "OLADAPO",
       "FIRST NAME": "JEMIMA OLAOLUWAKITAN",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLAJAS1091": {
@@ -2481,6 +4119,24 @@
       "LAST NAME": "OLADAPO",
       "FIRST NAME": "JASON ANJOLAOLUWA",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLAJES1092": {
@@ -2508,6 +4164,24 @@
       "LAST NAME": "OLADEJO",
       "FIRST NAME": "JESUTOFUNMI PRECIOUS",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 6970.0,
+      "ad_form": 0
     }
   },
   "OLAADE1093": {
@@ -2535,6 +4209,24 @@
       "LAST NAME": "OLALEMI",
       "FIRST NAME": "ADEMIDE SAMUEL",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7000.0,
+      "ad_form": 0
     }
   },
   "OLATIA1094": {
@@ -2562,6 +4254,24 @@
       "LAST NAME": "OLALERE",
       "FIRST NAME": "TIARAOLUWA SARAH",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3500.0,
+      "ad_form": 0
     }
   },
   "OLAFAI1095": {
@@ -2589,6 +4299,24 @@
       "LAST NAME": "OLATUNDE",
       "FIRST NAME": "FAITHFULNESS SAMUEL",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -2000.0,
+      "ad_form": 0
     }
   },
   "OLAJEM1096": {
@@ -2616,6 +4344,24 @@
       "LAST NAME": "OLATUNJI",
       "FIRST NAME": "JEMIMAH OLAMIDE",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLAGRE1097": {
@@ -2643,6 +4389,24 @@
       "LAST NAME": "OLATUNJI",
       "FIRST NAME": "GREAT MOYINOLUWA",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 8000.0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLAINI1098": {
@@ -2670,6 +4434,24 @@
       "LAST NAME": "OLATUNJI",
       "FIRST NAME": "INIOLUWA BRIGHT",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 16000.0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLOPRA1099": {
@@ -2697,6 +4479,24 @@
       "LAST NAME": "OLOGUNDUDU",
       "FIRST NAME": "PRAISE",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLUTIM1100": {
@@ -2724,6 +4524,24 @@
       "LAST NAME": "OLUJIMI",
       "FIRST NAME": "TIMOTHY OGOOLUWA",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 3000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 0,
+      "holiday_lesson": 0,
+      "outstanding": 7115.0,
+      "ad_form": 0
     }
   },
   "OLUDAV1101": {
@@ -2751,6 +4569,24 @@
       "LAST NAME": "OLUJIMI",
       "FIRST NAME": "DAVID TIOLUWANIOKANMI",
       "CLASS": "PRIMARY 3"
+    },
+    "breakdown": {
+      "tuition": 3231.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 0,
+      "holiday_lesson": 0,
+      "outstanding": 2560.0,
+      "ad_form": 0
     }
   },
   "OLULEO1102": {
@@ -2778,6 +4614,24 @@
       "LAST NAME": "OLUNIYI",
       "FIRST NAME": "LEONARD DAVID",
       "CLASS": "PRIMARY 3"
+    },
+    "breakdown": {
+      "tuition": 0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7000.0,
+      "ad_form": 0
     }
   },
   "OLUJOA1103": {
@@ -2805,6 +4659,24 @@
       "LAST NAME": "OLUNIYI",
       "FIRST NAME": "JOANNA AYOMIDE",
       "CLASS": "SENIOR SECONDARY SCHOOL 3"
+    },
+    "breakdown": {
+      "tuition": 0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 20000.0,
+      "holiday_lesson": 0,
+      "outstanding": 4000.0,
+      "ad_form": 0
     }
   },
   "OLUEMM1104": {
@@ -2832,6 +4704,24 @@
       "LAST NAME": "OLUWAFEMI",
       "FIRST NAME": "EMMANUEL OBALOLUWA",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OLUJOY1105": {
@@ -2859,6 +4749,24 @@
       "LAST NAME": "OLUWAFEMI",
       "FIRST NAME": "JOY TOLUWANI",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -2935.0,
+      "ad_form": 0
     }
   },
   "OLUEMM1106": {
@@ -2886,6 +4794,24 @@
       "LAST NAME": "OLUWASEGUN",
       "FIRST NAME": "EMMANUEL OLUWAKOREDE",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 23100.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4200.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 9380.0,
+      "ad_form": 0
     }
   },
   "OLUZIO1107": {
@@ -2913,6 +4839,24 @@
       "LAST NAME": "OLUWASESAN",
       "FIRST NAME": "ZION OLAWALARAMI",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 22010.0,
+      "ad_form": 0
     }
   },
   "OLUISR1108": {
@@ -2940,6 +4884,24 @@
       "LAST NAME": "OLUWASEUN",
       "FIRST NAME": "ISRAEL ANJOLAOLUWA",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7000.0,
+      "ad_form": 0
     }
   },
   "OLUMOR1109": {
@@ -2967,6 +4929,24 @@
       "LAST NAME": "OLUWASHOLA",
       "FIRST NAME": "MORIRE ESTHER",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 13000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 8000.0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": -5000.0,
+      "ad_form": 0
     }
   },
   "OLUTEM1110": {
@@ -2994,6 +4974,24 @@
       "LAST NAME": "OLUWASHOLA",
       "FIRST NAME": "TEMILOLUWA ELIZABETH",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 14000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 2500.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 8000.0,
+      "holiday_lesson": 0,
+      "outstanding": -5000.0,
+      "ad_form": 0
     }
   },
   "ONOMIR1111": {
@@ -3021,6 +5019,24 @@
       "LAST NAME": "ONOJA",
       "FIRST NAME": "MIRACLE",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 16500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 6355.0,
+      "ad_form": 0
     }
   },
   "OSIUGO1112": {
@@ -3048,6 +5064,24 @@
       "LAST NAME": "OSIGWE",
       "FIRST NAME": "UGOCHUKWU DOMINION",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "OSIOSI1113": {
@@ -3075,6 +5109,24 @@
       "LAST NAME": "OSIGWE",
       "FIRST NAME": "OSINACHI KINGDAVID",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "OSUMAX1114": {
@@ -3102,6 +5154,24 @@
       "LAST NAME": "OSUNDEYI",
       "FIRST NAME": "MAXWELL",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OSUALE1115": {
@@ -3129,6 +5199,24 @@
       "LAST NAME": "OSUNDEYI",
       "FIRST NAME": "ALEXANDER",
       "CLASS": "PRIMARY 2"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "OYEIMO1116": {
@@ -3156,6 +5244,24 @@
       "LAST NAME": "OYETUNJI",
       "FIRST NAME": "IMOLEAYO MARY",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 8000.0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "OYEISA1117": {
@@ -3183,6 +5289,24 @@
       "LAST NAME": "OYETUNJI",
       "FIRST NAME": "ISAAC ORINAYO",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 13000.0,
+      "ad_form": 0
     }
   },
   "PETFAV1118": {
@@ -3210,6 +5334,24 @@
       "LAST NAME": "PETER",
       "FIRST NAME": "FAVOUR ELIANA",
       "CLASS": "NURSERY 1"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 8240.0,
+      "ad_form": 0
     }
   },
   "SAHSAL1119": {
@@ -3237,6 +5379,24 @@
       "LAST NAME": "SAHEED",
       "FIRST NAME": "SALEEM",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "SAHAZE1120": {
@@ -3264,6 +5424,24 @@
       "LAST NAME": "SAHEED",
       "FIRST NAME": "AZEEMAH",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "SAHIBR1121": {
@@ -3291,6 +5469,24 @@
       "LAST NAME": "SAHEED",
       "FIRST NAME": "IBRAHIM",
       "CLASS": "PRIMARY 4"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 10900.0,
+      "ad_form": 0
     }
   },
   "SAHFAR1122": {
@@ -3318,6 +5514,24 @@
       "LAST NAME": "SAHEED",
       "FIRST NAME": "FARIDAT ABISOLA",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 30000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 6000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 13510.0,
+      "ad_form": 0
     }
   },
   "SANAMI1123": {
@@ -3345,6 +5559,24 @@
       "LAST NAME": "SANNI",
       "FIRST NAME": "AMINAT OPEYEMI",
       "CLASS": "SENIOR SECONDARY SCHOOL 3"
+    },
+    "breakdown": {
+      "tuition": 20000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 20000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "SANDES1124": {
@@ -3372,6 +5604,24 @@
       "LAST NAME": "SANUSI",
       "FIRST NAME": "DESIRE",
       "CLASS": "NURSERY 2"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "SANJOS1125": {
@@ -3399,6 +5649,24 @@
       "LAST NAME": "SANUSI",
       "FIRST NAME": "JOSIAH BRIGHT",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 4750.0,
+      "ad_form": 0
     }
   },
   "SANBLE1126": {
@@ -3426,6 +5694,24 @@
       "LAST NAME": "SANUSI",
       "FIRST NAME": "BLESSING",
       "CLASS": "PRIMARY 3"
+    },
+    "breakdown": {
+      "tuition": 21000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 3750.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 0,
+      "ad_form": 0
     }
   },
   "SOLIMA1127": {
@@ -3453,6 +5739,24 @@
       "LAST NAME": "SOLAWUDEEN",
       "FIRST NAME": "IMAN ABISADE",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 7000.0,
+      "ad_form": 0
     }
   },
   "TEMOLU1128": {
@@ -3480,6 +5784,24 @@
       "LAST NAME": "TEMITOPE",
       "FIRST NAME": "OLUWATIMILEYIN GODWIN",
       "CLASS": "JUNIOR SECONDARY SCHOOL 2"
+    },
+    "breakdown": {
+      "tuition": 23100.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 4200.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "TEMEMM1129": {
@@ -3507,6 +5829,24 @@
       "LAST NAME": "TEMITOPE",
       "FIRST NAME": "EMMANUEL OLUWASEMILORE",
       "CLASS": "SENIOR SECONDARY SCHOOL 1"
+    },
+    "breakdown": {
+      "tuition": 30000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 6000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   },
   "TIAAIS1130": {
@@ -3534,6 +5874,24 @@
       "LAST NAME": "TIAMIYU",
       "FIRST NAME": "AISHAT WURAOLA",
       "CLASS": "PRIMARY 1"
+    },
+    "breakdown": {
+      "tuition": 28000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 5000.0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -2980.0,
+      "ad_form": 0
     }
   },
   "UDEZIO1131": {
@@ -3561,6 +5919,24 @@
       "LAST NAME": "UDENSON",
       "FIRST NAME": "ZION",
       "CLASS": "CRECHE"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": 33000.0,
+      "ad_form": 0
     }
   },
   "UDETES1132": {
@@ -3588,6 +5964,24 @@
       "LAST NAME": "UDENSON",
       "FIRST NAME": "TESTIMONY",
       "CLASS": "PLAYGROUP 1"
+    },
+    "breakdown": {
+      "tuition": 19500.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -10000.0,
+      "ad_form": 0
     }
   },
   "WAHFAI1133": {
@@ -3615,6 +6009,24 @@
       "LAST NAME": "WAHAB",
       "FIRST NAME": "FAIZA ALVES",
       "CLASS": "PLAYGROUP 2"
+    },
+    "breakdown": {
+      "tuition": 26000.0,
+      "pta_exam": 0,
+      "report_card": 0,
+      "practical": 0,
+      "textbooks": 0,
+      "nb_stat": 0,
+      "uniform": 0,
+      "hoody": 0,
+      "sportswear": 0,
+      "afterschool": 0,
+      "excursion": 0,
+      "external_exam": 0,
+      "graduation": 10000.0,
+      "holiday_lesson": 0,
+      "outstanding": -3000.0,
+      "ad_form": 0
     }
   }
 }
