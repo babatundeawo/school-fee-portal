@@ -1,706 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>School Fee Portal | 3rd Term 2025-2026</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-            min-height: 100vh;
-            min-height: 100dvh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        
-        .container {
-            max-width: 500px;
-            width: 100%;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-            overflow: hidden;
-            animation: slideUp 0.4s ease;
-        }
-        
-        @keyframes slideUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        header {
-            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
-            color: white;
-            padding: 28px 20px 22px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        header::before {
-            content: '';
-            position: absolute;
-            top: -60%;
-            right: -30%;
-            width: 250px;
-            height: 250px;
-            background: rgba(255,255,255,0.04);
-            border-radius: 50%;
-        }
-        
-        header::after {
-            content: '';
-            position: absolute;
-            bottom: -40%;
-            left: -20%;
-            width: 180px;
-            height: 180px;
-            background: rgba(255,255,255,0.03);
-            border-radius: 50%;
-        }
-        
-        header h1 {
-            font-size: 1.7em;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        header h1 .emoji {
-            font-size: 1.1em;
-        }
-        
-        header p {
-            opacity: 0.75;
-            margin-top: 6px;
-            font-size: 0.9em;
-            font-weight: 400;
-            position: relative;
-            letter-spacing: 0.3px;
-        }
-        
-        .form-section {
-            padding: 28px 18px 24px;
-            text-align: center;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e9ecef;
-        }
-        
-        .form-section h2 {
-            font-size: 1.1em;
-            color: #1a252f;
-            margin-bottom: 16px;
-            font-weight: 600;
-        }
-        
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        
-        input {
-            padding: 16px 18px;
-            font-size: 1em;
-            width: 100%;
-            border: 2.5px solid #dee2e6;
-            border-radius: 12px;
-            outline: none;
-            transition: all 0.25s ease;
-            font-family: 'Inter', -apple-system, Arial, sans-serif;
-            background: white;
-            -webkit-appearance: none;
-            appearance: none;
-        }
-        
-        input:focus {
-            border-color: #667eea;
-            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
-        }
-        
-        input::placeholder {
-            color: #adb5bd;
-            font-size: 0.95em;
-        }
-        
-        input:disabled {
-            opacity: 0.6;
-            background: #f1f3f5;
-        }
-        
-        button {
-            padding: 16px 20px;
-            font-size: 1em;
-            width: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.25s ease;
-            font-family: 'Inter', -apple-system, Arial, sans-serif;
-            touch-action: manipulation;
-            -webkit-tap-highlight-color: transparent;
-        }
-        
-        button:active {
-            transform: scale(0.97);
-        }
-        
-        button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-        
-        button .btn-icon {
-            margin-right: 8px;
-        }
-        
-        .help-text {
-            margin-top: 14px;
-            font-size: 0.8em;
-            color: #868e96;
-            line-height: 1.4;
-        }
-        
-        .help-text a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .help-text a:active {
-            opacity: 0.7;
-        }
-        
-        .result-section {
-            padding: 20px 16px 24px;
-            min-height: 200px;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 40px 20px;
-            color: #6c757d;
-        }
-        
-        .spinner {
-            display: inline-block;
-            width: 36px;
-            height: 36px;
-            border: 3.5px solid #e9ecef;
-            border-top: 3.5px solid #667eea;
-            border-radius: 50%;
-            animation: spin 0.7s linear infinite;
-            margin-bottom: 14px;
-        }
-        
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        
-        .loading p {
-            font-size: 0.95em;
-        }
-        
-        .error {
-            background: #fef2f2;
-            border-left: 4px solid #ef4444;
-            padding: 20px 18px;
-            border-radius: 10px;
-            color: #991b1b;
-            text-align: center;
-        }
-        
-        .error .icon {
-            font-size: 2.5em;
-            margin-bottom: 8px;
-            display: block;
-        }
-        
-        .error p {
-            font-size: 0.95em;
-            font-weight: 500;
-            line-height: 1.5;
-        }
-        
-        .success {
-            background: #f0fdf4;
-            border-left: 4px solid #22c55e;
-            padding: 20px 16px 18px;
-            border-radius: 10px;
-        }
-        
-        .student-header {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-bottom: 16px;
-            padding-bottom: 14px;
-            border-bottom: 2px solid #e5e7eb;
-        }
-        
-        .student-header h2 {
-            color: #166534;
-            font-size: 1.15em;
-            font-weight: 700;
-            line-height: 1.3;
-            word-break: break-word;
-        }
-        
-        .student-header .code-info {
-            color: #6b7280;
-            font-size: 0.82em;
-            font-weight: 500;
-        }
-        
-        .student-header .class-badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5px 14px;
-            border-radius: 20px;
-            font-size: 0.78em;
-            font-weight: 600;
-            display: inline-block;
-            align-self: flex-start;
-            letter-spacing: 0.3px;
-        }
-        
-        .summary-cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 8px;
-            margin: 16px 0 20px;
-        }
-        
-        .summary-card {
-            background: white;
-            padding: 14px 8px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            text-align: center;
-            border: 1px solid #e5e7eb;
-        }
-        
-        .summary-card .label {
-            font-size: 0.6em;
-            color: #6b7280;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-        }
-        
-        .summary-card .value {
-            font-size: 1.1em;
-            font-weight: 700;
-            margin-top: 4px;
-            word-break: break-word;
-        }
-        
-        .summary-card .value.balance {
-            color: #dc2626;
-        }
-        
-        .summary-card .value.positive {
-            color: #16a34a;
-        }
-        
-        .fee-section-title {
-            font-size: 1em;
-            font-weight: 600;
-            color: #1e293b;
-            margin: 18px 0 10px;
-        }
-        
-        .fee-table-wrapper {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            margin: 0 -4px;
-            padding: 0 4px;
-        }
-        
-        .fee-table {
-            width: 100%;
-            min-width: 280px;
-            border-collapse: collapse;
-            font-size: 0.88em;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        .fee-table th {
-            background: #f1f5f9;
-            color: #1e293b;
-            font-weight: 600;
-            padding: 10px 12px;
-            text-align: left;
-            border-bottom: 2px solid #e2e8f0;
-            font-size: 0.82em;
-            text-transform: uppercase;
-            letter-spacing: 0.4px;
-        }
-        
-        .fee-table td {
-            padding: 9px 12px;
-            border-bottom: 1px solid #e2e8f0;
-            font-size: 0.9em;
-        }
-        
-        .fee-table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .fee-table tr:active td {
-            background: #f1f3f5;
-        }
-        
-        .fee-table .fee-amount {
-            text-align: right;
-            font-weight: 500;
-            white-space: nowrap;
-        }
-        
-        .fee-table .category-name {
-            word-break: break-word;
-            padding-right: 8px;
-        }
-        
-        .no-details {
-            color: #6b7280;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9em;
-        }
-        
-        .footer {
-            text-align: center;
-            padding: 16px 18px;
-            color: #868e96;
-            font-size: 0.75em;
-            background: #f8f9fa;
-            border-top: 1px solid #e9ecef;
-            line-height: 1.5;
-        }
-        
-        /* Touch-friendly tap targets */
-        .clickable {
-            cursor: pointer;
-            touch-action: manipulation;
-        }
-        
-        /* Improved scrolling */
-        .scrollable {
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        /* Small screen optimizations */
-        @media (max-width: 380px) {
-            body { padding: 8px; }
-            header h1 { font-size: 1.4em; }
-            .summary-cards { gap: 5px; }
-            .summary-card .value { font-size: 0.95em; }
-            .summary-card { padding: 10px 6px; }
-            .fee-table { font-size: 0.8em; }
-            .fee-table th, .fee-table td { padding: 7px 8px; }
-        }
-        
-        @media (min-width: 600px) {
-            body { padding: 30px; }
-            .container { max-width: 600px; }
-            .summary-cards { gap: 12px; }
-            .summary-card .value { font-size: 1.3em; }
-            .fee-table { font-size: 0.95em; }
-        }
-        
-        @media (min-width: 768px) {
-            .container { max-width: 700px; }
-            .input-group { flex-direction: row; }
-            input { flex: 1; }
-            button { width: auto; min-width: 140px; }
-            .summary-cards { gap: 15px; }
-        }
-        
-        @media (max-width: 480px) {
-            .student-header h2 { font-size: 1em; }
-            .summary-card .label { font-size: 0.55em; }
-            .summary-card .value { font-size: 1em; }
-        }
-        
-        /* Dark mode support */
-        @media (prefers-color-scheme: dark) {
-            body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); }
-            .container { background: #1e293b; }
-            header { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-            .form-section { background: #1e293b; border-bottom-color: #334155; }
-            .form-section h2 { color: #e2e8f0; }
-            input { background: #0f172a; border-color: #334155; color: #e2e8f0; }
-            input::placeholder { color: #64748b; }
-            input:focus { border-color: #818cf8; box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.2); }
-            .success { background: #052e16; border-left-color: #22c55e; }
-            .student-header { border-bottom-color: #334155; }
-            .student-header h2 { color: #86efac; }
-            .student-header .code-info { color: #94a3b8; }
-            .summary-card { background: #0f172a; border-color: #334155; }
-            .summary-card .label { color: #94a3b8; }
-            .summary-card .value { color: #e2e8f0; }
-            .summary-card .value.balance { color: #f87171; }
-            .summary-card .value.positive { color: #4ade80; }
-            .fee-section-title { color: #e2e8f0; }
-            .fee-table th { background: #0f172a; color: #94a3b8; border-bottom-color: #334155; }
-            .fee-table td { border-bottom-color: #1e293b; color: #e2e8f0; }
-            .fee-table tr:active td { background: #1e293b; }
-            .error { background: #450a0a; border-left-color: #ef4444; color: #fca5a5; }
-            .footer { background: #1e293b; border-top-color: #334155; color: #64748b; }
-            .help-text { color: #94a3b8; }
-            .no-details { color: #94a3b8; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<title>Fee Statement Portal · 3rd Term 2025–2026</title>
+<meta name="description" content="Private fee statement lookup for parents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#152238;
+    --ink-soft:#4b5768;
+    --paper:#e9edf4;
+    --surface:#ffffff;
+    --surface-sunk:#f4f6fa;
+    --hairline:#dbe1ec;
+    --brass:#b8892f;
+    --brass-rgb:184,137,47;
+    --brass-soft:#f3e6cd;
+    --green:#1f7a4d;
+    --green-soft:#e2f3e9;
+    --red:#b3392c;
+    --red-soft:#fbe9e6;
+    --radius-lg:20px;
+    --radius-md:14px;
+    --radius-sm:9px;
+    --shadow-card:0 24px 60px -20px rgba(21,34,56,0.35), 0 2px 8px rgba(21,34,56,0.06);
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'IBM Plex Sans', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    --font-mono:'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ink:#eef1f6;
+      --ink-soft:#a7b0c0;
+      --paper:#0d1420;
+      --surface:#141d2c;
+      --surface-sunk:#101828;
+      --hairline:#26324a;
+      --brass:#dbb063;
+      --brass-rgb:219,176,99;
+      --brass-soft:#2c2410;
+      --green:#5fd39a;
+      --green-soft:#122a20;
+      --red:#f0897c;
+      --red-soft:#2c1512;
+      --shadow-card:0 24px 60px -20px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.3);
+    }
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    font-family:var(--font-body);
+    background:
+      radial-gradient(1200px 600px at 15% -10%, rgba(var(--brass-rgb),0.12), transparent 60%),
+      var(--paper);
+    color:var(--ink);
+    min-height:100vh;
+    min-height:100dvh;
+    padding:28px 14px;
+    display:flex;
+    justify-content:center;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  @media (max-width:480px){ body{ padding:0; align-items:stretch; } }
+
+  .sheet{
+    max-width:480px;
+    width:100%;
+    height:fit-content;
+    background:var(--surface);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-card);
+    overflow:hidden;
+    animation:rise .5s cubic-bezier(.2,.8,.2,1);
+  }
+
+  @media (max-width:480px){ .sheet{ border-radius:0; min-height:100dvh; box-shadow:none; } }
+
+  @keyframes rise{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce){ .sheet{ animation:none; } }
+
+  /* ---- Header band ---- */
+  header{
+    background:linear-gradient(160deg, var(--ink) 0%, #223458 100%);
+    color:#f2f4f8;
+    padding:30px 26px 26px;
+    position:relative;
+  }
+
+  .crest{
+    width:44px; height:44px;
+    border-radius:50%;
+    border:1.5px solid rgba(255,255,255,0.35);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-display);
+    font-weight:600; font-size:1.15em;
+    color:#f2f4f8;
+    margin-bottom:14px;
+    background:rgba(255,255,255,0.06);
+  }
+
+  header h1{
+    font-family:var(--font-display);
+    font-weight:600;
+    font-size:1.5em;
+    letter-spacing:-0.01em;
+    line-height:1.15;
+  }
+
+  header p{
+    margin-top:6px;
+    font-size:0.85em;
+    color:rgba(242,244,248,0.65);
+    letter-spacing:0.02em;
+  }
+
+  /* torn / perforated divider */
+  .perforation{
+    position:relative;
+    height:14px;
+    background:var(--surface);
+  }
+  .perforation::before{
+    content:'';
+    position:absolute;
+    top:-7px; left:0; right:0; height:14px;
+    background:radial-gradient(circle at 50% 50%, var(--paper) 0, var(--paper) 5.5px, transparent 6px);
+    background-size:20px 14px;
+    background-repeat:repeat-x;
+    background-position:8px 0;
+  }
+  @media (max-width:480px){
+    .perforation::before{ background-image:radial-gradient(circle at 50% 50%, var(--paper) 0, var(--paper) 5.5px, transparent 6px); }
+  }
+
+  /* ---- Code entry ---- */
+  .form-section{ padding:24px 26px 22px; }
+
+  .form-label{
+    font-size:0.72em;
+    font-weight:600;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    display:block;
+    margin-bottom:10px;
+  }
+
+  .input-row{ display:flex; gap:8px; }
+
+  input#codeInput{
+    flex:1;
+    min-width:0;
+    padding:14px 14px;
+    font-size:1.05em;
+    font-family:var(--font-mono);
+    letter-spacing:0.14em;
+    font-weight:500;
+    color:var(--ink);
+    background:var(--surface-sunk);
+    border:1.5px solid var(--hairline);
+    border-radius:var(--radius-sm);
+    outline:none;
+    text-transform:uppercase;
+    transition:border-color .2s ease, box-shadow .2s ease;
+  }
+  input#codeInput::placeholder{ color:var(--ink-soft); opacity:0.55; letter-spacing:0.05em; font-weight:400; }
+  input#codeInput:focus{ border-color:var(--brass); box-shadow:0 0 0 4px rgba(var(--brass-rgb),0.18); }
+  input#codeInput:disabled{ opacity:0.55; }
+
+  button#checkBtn{
+    flex:0 0 auto;
+    padding:0 20px;
+    font-size:0.95em;
+    font-family:var(--font-body);
+    font-weight:600;
+    color:#fff;
+    background:var(--ink);
+    border:none;
+    border-radius:var(--radius-sm);
+    cursor:pointer;
+    display:flex; align-items:center; gap:7px;
+    transition:transform .15s ease, opacity .15s ease;
+  }
+  button#checkBtn:active{ transform:scale(0.96); }
+  button#checkBtn:disabled{ opacity:0.55; cursor:not-allowed; }
+  button#checkBtn svg{ width:16px; height:16px; }
+
+  .help-text{
+    margin-top:12px;
+    font-size:0.8em;
+    color:var(--ink-soft);
+    line-height:1.5;
+  }
+
+  :focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
+
+  /* ---- Result area ---- */
+  .result-section{ padding:4px 26px 26px; min-height:180px; }
+
+  .placeholder{
+    text-align:center;
+    padding:34px 12px 10px;
+    color:var(--ink-soft);
+  }
+  .placeholder svg{ width:34px; height:34px; margin-bottom:10px; opacity:0.5; }
+  .placeholder p{ font-size:0.92em; }
+
+  .loading{ text-align:center; padding:44px 12px; color:var(--ink-soft); }
+  .spinner{
+    width:30px; height:30px;
+    border:3px solid var(--hairline);
+    border-top:3px solid var(--brass);
+    border-radius:50%;
+    margin:0 auto 14px;
+    animation:spin .7s linear infinite;
+  }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .error{
+    background:var(--red-soft);
+    border-left:3px solid var(--red);
+    padding:16px 16px;
+    border-radius:var(--radius-sm);
+    color:var(--red);
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    font-size:0.92em;
+    line-height:1.45;
+  }
+  .error svg{ width:18px; height:18px; flex:0 0 auto; margin-top:1px; }
+
+  /* ---- Statement card ---- */
+  .statement{ animation:rise .35s cubic-bezier(.2,.8,.2,1); }
+
+  .student-row{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    gap:12px; margin-bottom:18px;
+  }
+  .student-name{ font-family:var(--font-display); font-size:1.18em; font-weight:600; line-height:1.25; }
+  .student-code{ font-family:var(--font-mono); font-size:0.76em; color:var(--ink-soft); margin-top:4px; letter-spacing:0.03em; }
+  .class-badge{
+    flex:0 0 auto;
+    background:var(--surface-sunk);
+    border:1px solid var(--hairline);
+    color:var(--ink-soft);
+    padding:5px 11px;
+    border-radius:100px;
+    font-size:0.72em;
+    font-weight:600;
+    letter-spacing:0.03em;
+    white-space:nowrap;
+  }
+
+  /* progress ring + totals */
+  .progress-block{
+    display:flex; align-items:center; gap:18px;
+    background:var(--surface-sunk);
+    border:1px solid var(--hairline);
+    border-radius:var(--radius-md);
+    padding:16px 16px;
+    margin-bottom:18px;
+  }
+  .ring-wrap{ position:relative; flex:0 0 auto; width:76px; height:76px; }
+  .ring-wrap svg{ transform:rotate(-90deg); }
+  .ring-track{ fill:none; stroke:var(--hairline); stroke-width:7; }
+  .ring-fill{ fill:none; stroke:var(--brass); stroke-width:7; stroke-linecap:round; transition:stroke-dashoffset .8s cubic-bezier(.2,.8,.2,1); }
+  .ring-fill.paid-full{ stroke:var(--green); }
+  .ring-pct{
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--font-mono); font-weight:600; font-size:0.86em;
+  }
+
+  .totals{ flex:1; min-width:0; }
+  .totals-row{ display:flex; justify-content:space-between; font-size:0.86em; padding:3px 0; }
+  .totals-row .t-label{ color:var(--ink-soft); }
+  .totals-row .t-val{ font-family:var(--font-mono); font-weight:500; }
+  .totals-row.balance .t-label{ color:var(--ink); font-weight:600; }
+  .totals-row.balance .t-val{ font-weight:700; font-size:1.02em; }
+  .totals-row.balance .t-val.due{ color:var(--red); }
+  .totals-row.balance .t-val.clear{ color:var(--green); }
+
+  .status-pill{
+    display:inline-flex; align-items:center; gap:5px;
+    font-size:0.72em; font-weight:600; letter-spacing:0.02em;
+    padding:4px 10px; border-radius:100px; margin-top:6px;
+  }
+  .status-pill.due{ background:var(--red-soft); color:var(--red); }
+  .status-pill.clear{ background:var(--green-soft); color:var(--green); }
+  .status-pill svg{ width:11px; height:11px; }
+
+  /* ledger breakdown */
+  .ledger-title{
+    font-size:0.72em; font-weight:600; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--ink-soft); margin-bottom:10px;
+  }
+  .ledger{ margin-bottom:20px; }
+  .ledger-row{
+    display:flex; align-items:baseline; gap:8px;
+    padding:7px 0;
+    border-bottom:1px dotted var(--hairline);
+    font-size:0.9em;
+  }
+  .ledger-row:last-child{ border-bottom:none; }
+  .ledger-cat{ color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .ledger-leader{ flex:1; border-bottom:1px dotted var(--hairline); min-width:8px; transform:translateY(-3px); }
+  .ledger-amt{ font-family:var(--font-mono); font-weight:500; white-space:nowrap; }
+
+  .no-details{ font-size:0.86em; color:var(--ink-soft); padding:8px 0 4px; }
+
+  /* actions */
+  .actions{ display:flex; gap:8px; }
+  .action-btn{
+    flex:1;
+    display:flex; align-items:center; justify-content:center; gap:7px;
+    padding:11px 12px;
+    font-family:var(--font-body); font-size:0.85em; font-weight:600;
+    border-radius:var(--radius-sm);
+    border:1px solid var(--hairline);
+    background:var(--surface);
+    color:var(--ink);
+    cursor:pointer;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .action-btn:active{ transform:scale(0.97); }
+  .action-btn svg{ width:15px; height:15px; }
+  .action-btn.primary{ background:var(--ink); color:#fff; border-color:var(--ink); }
+
+  footer{
+    padding:16px 26px 22px;
+    border-top:1px solid var(--hairline);
+    text-align:center;
+  }
+  footer p{ font-size:0.78em; color:var(--ink-soft); }
+  footer p + p{ margin-top:2px; }
+</style>
 </head>
 <body>
-    <div class="container" id="app">
-        <header>
-            <h1>
-                <span class="emoji">🏫</span>
-                Fee Portal
-            </h1>
-            <p>3rd Term 2025-2026</p>
-        </header>
+  <main class="sheet" id="app">
+    <header>
+      <div class="crest">FP</div>
+      <h1>Fee Statement Portal</h1>
+      <p>3rd Term · 2025–2026 Session</p>
+    </header>
 
-        <div class="form-section">
-            <h2>🔑 Enter Family Code</h2>
-            <div class="input-group">
-                <input 
-                    type="text" 
-                    id="codeInput" 
-                    placeholder="e.g. ABAAB1000" 
-                    maxlength="20"
-                    autofocus
-                    inputmode="text"
-                    autocorrect="off"
-                    autocapitalize="characters"
-                    spellcheck="false"
-                    onkeypress="if(event.key === 'Enter') checkCode()"
-                >
-                <button id="checkBtn" onclick="checkCode()">
-                    <span class="btn-icon">🔍</span> Check
-                </button>
-            </div>
-            <div class="help-text">
-                <small>Contact the school if you don't have a code</small>
-            </div>
-        </div>
+    <div class="perforation"></div>
 
-        <div class="result-section" id="result">
-            <div style="text-align:center; color:#94a3b8; padding:30px 10px;">
-                <p style="font-size:1em;">👋 Enter your code to view fee details</p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>For support, contact the school administration</p>
-        </div>
+    <div class="form-section">
+      <label class="form-label" for="codeInput">Family code</label>
+      <div class="input-row">
+        <input
+          type="text"
+          id="codeInput"
+          placeholder="e.g. ABAABD1000"
+          maxlength="20"
+          autofocus
+          inputmode="text"
+          autocorrect="off"
+          autocapitalize="characters"
+          spellcheck="false"
+          aria-label="Family code"
+        >
+        <button id="checkBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span>Check</span>
+        </button>
+      </div>
+      <p class="help-text">Don't have a code? Contact the school office — codes aren't shared over text for privacy.</p>
     </div>
 
-    <script>
-        // Cache DOM elements
-        const resultDiv = document.getElementById('result');
-        const codeInput = document.getElementById('codeInput');
-        const checkBtn = document.getElementById('checkBtn');
+    <div class="result-section" id="result">
+      <div class="placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 2h6l3 3v17H6V2z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+        <p>Enter your family code to view the statement</p>
+      </div>
+    </div>
 
-        // Student data cache
-        let studentData = null;
+    <footer>
+      <p>For questions about your statement, contact the school administration.</p>
+      <p id="updatedNote"></p>
+    </footer>
+  </main>
 
-        // Load data on page load
-        async function loadData() {
-            try {
-                const res = await fetch('students.json');
-                if (!res.ok) throw new Error('Failed to load data');
-                studentData = await res.json();
-                console.log('✅ Data loaded:', Object.keys(studentData).length, 'students');
-                return true;
-            } catch (e) {
-                console.error('Error loading data:', e);
-                return false;
-            }
+  <script>
+    const resultDiv = document.getElementById('result');
+    const codeInput = document.getElementById('codeInput');
+    const checkBtn = document.getElementById('checkBtn');
+    const updatedNote = document.getElementById('updatedNote');
+
+    let studentData = null;
+
+    const ICONS = {
+      alert: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>',
+      check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>',
+      copy: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+      share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 12 15"/><path d="m8 6 4-4 4 4"/><path d="M4 13v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/></svg>'
+    };
+
+    async function loadData() {
+      try {
+        const res = await fetch('students.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('Failed to load data');
+        studentData = await res.json();
+        return true;
+      } catch (e) {
+        console.error('Error loading data:', e);
+        return false;
+      }
+    }
+
+    function naira(n) {
+      const v = Number(n) || 0;
+      return '₦' + v.toLocaleString('en-NG', { maximumFractionDigits: 0 });
+    }
+
+    async function checkCode() {
+      const code = codeInput.value.trim().toUpperCase();
+
+      if (!code) {
+        showError('Please enter your family code.');
+        codeInput.focus();
+        return;
+      }
+
+      resultDiv.innerHTML = `
+        <div class="loading">
+          <div class="spinner"></div>
+          <p>Checking records…</p>
+        </div>`;
+      checkBtn.disabled = true;
+      codeInput.disabled = true;
+
+      try {
+        if (!studentData) {
+          const loaded = await loadData();
+          if (!loaded) { showError('Unable to load fee data. Check your connection and try again.'); return; }
         }
 
-        // Main check function
-        async function checkCode() {
-            const code = codeInput.value.trim().toUpperCase();
-            
-            if (!code) {
-                showError('Please enter your family code.', '🔑');
-                return;
-            }
-
-            // Show loading
-            resultDiv.innerHTML = `
-                <div class="loading">
-                    <div class="spinner"></div>
-                    <p>Checking records...</p>
-                </div>
-            `;
-
-            checkBtn.disabled = true;
-            codeInput.disabled = true;
-
-            try {
-                if (!studentData) {
-                    const loaded = await loadData();
-                    if (!loaded) {
-                        showError('Unable to load data. Please try again.', '⚠️');
-                        return;
-                    }
-                }
-
-                const student = studentData[code];
-                
-                if (student) {
-                    displayStudent(student, code);
-                } else {
-                    const foundKey = Object.keys(studentData).find(
-                        k => k.toUpperCase() === code
-                    );
-                    if (foundKey) {
-                        displayStudent(studentData[foundKey], foundKey);
-                    } else {
-                        showError(
-                            'Invalid family code. Please check and try again.',
-                            '❓'
-                        );
-                    }
-                }
-            } catch (e) {
-                console.error('Error:', e);
-                showError('An error occurred. Please refresh and try again.', '⚠️');
-            } finally {
-                checkBtn.disabled = false;
-                codeInput.disabled = false;
-            }
+        let student = studentData[code];
+        if (!student) {
+          const foundKey = Object.keys(studentData).find(k => k.toUpperCase() === code);
+          if (foundKey) student = studentData[foundKey];
         }
 
-        function displayStudent(student, code) {
-            const totalFee = student.total_fee || 0;
-            const totalPaid = student.total_paid || 0;
-            const balance = student.balance || 0;
-            
-            const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS'];
-            const feeKeys = Object.keys(student.details).filter(k => !excludeKeys.includes(k));
-            
-            let detailsHtml = '';
-            let hasValues = false;
-            
-            for (const key of feeKeys) {
-                const val = student.details[key];
-                if (val !== undefined && val !== null && val !== '' && val !== '0') {
-                    const numVal = parseFloat(val);
-                    if (!isNaN(numVal) && numVal > 0) {
-                        detailsHtml += `
-                            <tr>
-                                <td class="category-name">${key.replace(/_/g, ' ')}</td>
-                                <td class="fee-amount">₦${numVal.toLocaleString()}</td>
-                            </tr>
-                        `;
-                        hasValues = true;
-                    } else if (isNaN(numVal) && val !== '0') {
-                        detailsHtml += `
-                            <tr>
-                                <td class="category-name">${key.replace(/_/g, ' ')}</td>
-                                <td class="fee-amount">${val}</td>
-                            </tr>
-                        `;
-                        hasValues = true;
-                    }
-                }
-            }
-
-            const balanceClass = balance > 0 ? 'balance' : (balance < 0 ? 'positive' : '');
-
-            resultDiv.innerHTML = `
-                <div class="success">
-                    <div class="student-header">
-                        <div>
-                            <h2>✅ ${student.name}</h2>
-                            <div class="code-info">Code: ${code}</div>
-                        </div>
-                        <span class="class-badge">${student.class}</span>
-                    </div>
-                    
-                    <div class="summary-cards">
-                        <div class="summary-card">
-                            <div class="label">Total</div>
-                            <div class="value">₦${totalFee.toLocaleString()}</div>
-                        </div>
-                        <div class="summary-card">
-                            <div class="label">Paid</div>
-                            <div class="value" style="color:#16a34a;">₦${totalPaid.toLocaleString()}</div>
-                        </div>
-                        <div class="summary-card">
-                            <div class="label">Balance</div>
-                            <div class="value ${balanceClass}">₦${balance.toLocaleString()}</div>
-                        </div>
-                    </div>
-                    
-                    ${hasValues ? `
-                        <div class="fee-section-title">📋 Fee Breakdown</div>
-                        <div class="fee-table-wrapper">
-                            <table class="fee-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th style="text-align:right;">Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    ${detailsHtml}
-                                </tbody>
-                            </table>
-                        </div>
-                    ` : '<div class="no-details">No fee details available.</div>'}
-                </div>
-            `;
+        if (student) {
+          displayStudent(student, code);
+        } else {
+          showError('That code doesn\'t match our records. Double-check it and try again, or contact the school office.');
         }
+      } catch (e) {
+        console.error(e);
+        showError('Something went wrong. Please refresh and try again.');
+      } finally {
+        checkBtn.disabled = false;
+        codeInput.disabled = false;
+      }
+    }
 
-        function showError(message, icon = '❌') {
-            resultDiv.innerHTML = `
-                <div class="error">
-                    <span class="icon">${icon}</span>
-                    <p>${message}</p>
-                </div>
-            `;
+    function displayStudent(student, code) {
+      const totalFee = Number(student.total_fee) || 0;
+      const totalPaid = Number(student.total_paid) || 0;
+      const balance = Number(student.balance) || 0;
+      const pct = totalFee > 0 ? Math.max(0, Math.min(100, Math.round((totalPaid / totalFee) * 100))) : 0;
+      const isClear = balance <= 0;
+
+      const excludeKeys = ['LAST NAME', 'FIRST NAME', 'CLASS', 'TOTAL FEE', 'TOTAL PAID', 'BALANCE'];
+      const feeKeys = Object.keys(student.details || {}).filter(k => !excludeKeys.includes(k.trim().toUpperCase()));
+
+      let ledgerHtml = '';
+      let hasValues = false;
+      for (const key of feeKeys) {
+        const raw = student.details[key];
+        const numVal = parseFloat(raw);
+        const label = key.replace(/_/g, ' ').trim().replace(/\s+/g, ' ');
+        if (!isNaN(numVal) && numVal > 0) {
+          ledgerHtml += `
+            <div class="ledger-row">
+              <span class="ledger-cat">${escapeHtml(toTitle(label))}</span>
+              <span class="ledger-leader"></span>
+              <span class="ledger-amt">${naira(numVal)}</span>
+            </div>`;
+          hasValues = true;
+        } else if (isNaN(numVal) && raw && raw !== '0') {
+          ledgerHtml += `
+            <div class="ledger-row">
+              <span class="ledger-cat">${escapeHtml(toTitle(label))}</span>
+              <span class="ledger-leader"></span>
+              <span class="ledger-amt">${escapeHtml(raw)}</span>
+            </div>`;
+          hasValues = true;
         }
+      }
 
-        // Load data on page load
-        loadData();
+      const R = 32, C = 2 * Math.PI * R;
+      const offset = C - (pct / 100) * C;
 
-        // Focus input on load
-        setTimeout(() => codeInput.focus(), 300);
+      const shareText = `Fee Statement — ${student.name} (${student.class})\nTotal: ${naira(totalFee)}\nPaid: ${naira(totalPaid)}\nBalance: ${naira(balance)}`;
 
-        // Handle touch events for better mobile feel
-        document.addEventListener('touchstart', function() {}, { passive: true });
-    </script>
+      resultDiv.innerHTML = `
+        <div class="statement">
+          <div class="student-row">
+            <div>
+              <div class="student-name">${escapeHtml(student.name)}</div>
+              <div class="student-code">Code · ${escapeHtml(code)}</div>
+            </div>
+            <span class="class-badge">${escapeHtml(student.class)}</span>
+          </div>
+
+          <div class="progress-block">
+            <div class="ring-wrap">
+              <svg viewBox="0 0 76 76" width="76" height="76">
+                <circle class="ring-track" cx="38" cy="38" r="${R}"></circle>
+                <circle class="ring-fill ${pct >= 100 ? 'paid-full' : ''}" cx="38" cy="38" r="${R}"
+                  stroke-dasharray="${C}" stroke-dashoffset="${offset}"></circle>
+              </svg>
+              <div class="ring-pct">${pct}%</div>
+            </div>
+            <div class="totals">
+              <div class="totals-row"><span class="t-label">Total fee</span><span class="t-val">${naira(totalFee)}</span></div>
+              <div class="totals-row"><span class="t-label">Paid</span><span class="t-val">${naira(totalPaid)}</span></div>
+              <div class="totals-row balance"><span class="t-label">Balance</span><span class="t-val ${isClear ? 'clear' : 'due'}">${naira(Math.abs(balance))}</span></div>
+              <span class="status-pill ${isClear ? 'clear' : 'due'}">${isClear ? ICONS.check + ' Fully paid' : ICONS.alert + ' Balance due'}</span>
+            </div>
+          </div>
+
+          ${hasValues ? `
+            <div class="ledger-title">Breakdown</div>
+            <div class="ledger">${ledgerHtml}</div>
+          ` : '<div class="no-details">No itemised breakdown available for this term.</div>'}
+
+          <div class="actions">
+            <button class="action-btn" type="button" id="copyBtn">${ICONS.copy}<span>Copy</span></button>
+            <button class="action-btn primary" type="button" id="shareBtn">${ICONS.share}<span>Share</span></button>
+          </div>
+        </div>`;
+
+      document.getElementById('copyBtn').addEventListener('click', () => copyStatement(shareText));
+      document.getElementById('shareBtn').addEventListener('click', () => shareStatement(shareText));
+    }
+
+    function copyStatement(text) {
+      const btn = document.getElementById('copyBtn');
+      navigator.clipboard.writeText(text).then(() => {
+        const original = btn.innerHTML;
+        btn.innerHTML = `${ICONS.check}<span>Copied</span>`;
+        setTimeout(() => { btn.innerHTML = original; }, 1600);
+      }).catch(() => {});
+    }
+
+    function shareStatement(text) {
+      if (navigator.share) {
+        navigator.share({ text }).catch(() => {});
+      } else {
+        window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
+      }
+    }
+
+    function toTitle(s) {
+      return s.toLowerCase().replace(/\b\w/g, c => c.toUpperCase());
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function showError(message) {
+      resultDiv.innerHTML = `
+        <div class="error">
+          ${ICONS.alert}
+          <p>${escapeHtml(message)}</p>
+        </div>`;
+    }
+
+    checkBtn.addEventListener('click', checkCode);
+    codeInput.addEventListener('keypress', (e) => { if (e.key === 'Enter') checkCode(); });
+
+    loadData();
+    setTimeout(() => codeInput.focus(), 300);
+  </script>
 </body>
 </html>
