@@ -1235,8 +1235,8 @@
     "name": "AYEDUN PRECIOUS OGOMIDE",
     "class": "SENIOR SECONDARY SCHOOL 3",
     "total_fee": 59220.0,
-    "total_paid": 0,
-    "balance": 59220.0,
+    "total_paid": 50000.0,
+    "balance": 9220.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "20000",
@@ -1255,8 +1255,8 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "14220",
       "TOTAL FEE": "59220",
-      "TOTAL PAID": "0",
-      "BALANCE": "59220"
+      "TOTAL PAID": "50000",
+      "BALANCE": "9220"
     }
   },
   "AYOSAN1045": {
@@ -1543,8 +1543,8 @@
     "name": "EMORDI JULIAN KOLADE",
     "class": "PRIMARY 1",
     "total_fee": 67155.0,
-    "total_paid": 22050.0,
-    "balance": 45105.0,
+    "total_paid": 35050.0,
+    "balance": 32105.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "21000",
@@ -1563,16 +1563,16 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "22405",
       "TOTAL FEE": "67155",
-      "TOTAL PAID": "22050",
-      "BALANCE": "45105"
+      "TOTAL PAID": "35050",
+      "BALANCE": "32105"
     }
   },
   "EMOJAP1056": {
     "name": "EMORDI JAPHETH ENIOLA",
     "class": "PRIMARY 4",
     "total_fee": 68395.0,
-    "total_paid": 22000.0,
-    "balance": 46395.0,
+    "total_paid": 34000.0,
+    "balance": 34395.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "21000",
@@ -1591,8 +1591,8 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "23645",
       "TOTAL FEE": "68395",
-      "TOTAL PAID": "22000",
-      "BALANCE": "46395"
+      "TOTAL PAID": "34000",
+      "BALANCE": "34395"
     }
   },
   "ERIOLU1057": {
@@ -2019,8 +2019,8 @@
     "name": "JOHN JEDIDAH",
     "class": "PRIMARY 3",
     "total_fee": 38080.0,
-    "total_paid": 10000.0,
-    "balance": 28080.0,
+    "total_paid": 30000.0,
+    "balance": 8080.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "14000",
@@ -2039,8 +2039,8 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "1580",
       "TOTAL FEE": "38080",
-      "TOTAL PAID": "10000",
-      "BALANCE": "28080"
+      "TOTAL PAID": "30000",
+      "BALANCE": "8080"
     }
   },
   "KELAZE1073": {
