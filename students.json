@@ -1430,9 +1430,9 @@
   "DAVOLU1051": {
     "name": "DAVID OLUWADARASIMI",
     "class": "NURSERY 1",
-    "total_fee": 45500.0,
+    "total_fee": 53500.0,
     "total_paid": 35000.0,
-    "balance": 10500.0,
+    "balance": 18500.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "19500",
@@ -1441,7 +1441,7 @@
       "PRACTICAL": "0",
       "TEXTBOOKS": "0",
       "NB & STAT": "0",
-      "UNIFORM": "0",
+      "UNIFORM": "8000",
       "HOODY": "8000",
       "SPORTSWEAR": "0",
       " AFTERSCHOOL": "6000",
@@ -1450,9 +1450,9 @@
       "GRADUATION/ SPORTS/PARTY": "10000",
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "-2000",
-      "TOTAL FEE": "45500",
+      "TOTAL FEE": "53500",
       "TOTAL PAID": "35000",
-      "BALANCE": "10500"
+      "BALANCE": "18500"
     }
   },
   "DAVJES1052": {
@@ -2691,8 +2691,8 @@
     "name": "OLATUNJI JEMIMAH OLAMIDE",
     "class": "NURSERY 2",
     "total_fee": 52500.0,
-    "total_paid": 30000.0,
-    "balance": 22500.0,
+    "total_paid": 52500.0,
+    "balance": 0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "19500",
@@ -2711,16 +2711,16 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "-3000",
       "TOTAL FEE": "52500",
-      "TOTAL PAID": "30000",
-      "BALANCE": "22500"
+      "TOTAL PAID": "52500",
+      "BALANCE": "0"
     }
   },
   "OLAGRE1097": {
     "name": "OLATUNJI GREAT MOYINOLUWA",
     "class": "PLAYGROUP 2",
-    "total_fee": 44500.0,
-    "total_paid": 43000.0,
-    "balance": 1500.0,
+    "total_fee": 52500.0,
+    "total_paid": 52500.0,
+    "balance": 0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "19500",
@@ -2729,7 +2729,7 @@
       "PRACTICAL": "0",
       "TEXTBOOKS": "0",
       "NB & STAT": "0",
-      "UNIFORM": "8000",
+      "UNIFORM": "16000",
       "HOODY": "0",
       "SPORTSWEAR": "0",
       " AFTERSCHOOL": "6000",
@@ -2738,9 +2738,9 @@
       "GRADUATION/ SPORTS/PARTY": "10000",
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "-3000",
-      "TOTAL FEE": "44500",
-      "TOTAL PAID": "43000",
-      "BALANCE": "1500"
+      "TOTAL FEE": "52500",
+      "TOTAL PAID": "52500",
+      "BALANCE": "0"
     }
   },
   "OLAINI1098": {
@@ -3279,8 +3279,8 @@
     "name": "OYETUNJI ISAAC ORINAYO",
     "class": "NURSERY 1",
     "total_fee": 52500.0,
-    "total_paid": 24000.0,
-    "balance": 28500.0,
+    "total_paid": 44000.0,
+    "balance": 8500.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "19500",
@@ -3299,8 +3299,8 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "13000",
       "TOTAL FEE": "52500",
-      "TOTAL PAID": "24000",
-      "BALANCE": "28500"
+      "TOTAL PAID": "44000",
+      "BALANCE": "8500"
     }
   },
   "PETFAV1118": {
