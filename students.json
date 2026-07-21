@@ -2887,8 +2887,8 @@
     "name": "OLUNIYI JOANNA AYOMIDE",
     "class": "SENIOR SECONDARY SCHOOL 3",
     "total_fee": 29000.0,
-    "total_paid": 3000.0,
-    "balance": 26000.0,
+    "total_paid": 29000.0,
+    "balance": 0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "0",
@@ -2907,8 +2907,8 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "4000",
       "TOTAL FEE": "29000",
-      "TOTAL PAID": "3000",
-      "BALANCE": "26000"
+      "TOTAL PAID": "29000",
+      "BALANCE": "0"
     }
   },
   "OLUEMM1104": {
@@ -3475,8 +3475,8 @@
     "name": "SANUSI DESIRE",
     "class": "NURSERY 2",
     "total_fee": 39500.0,
-    "total_paid": 20000.0,
-    "balance": 19500.0,
+    "total_paid": 30000.0,
+    "balance": 9500.0,
     "details": {
       " AD_FORM": "0",
       "TUITION": "19500",
@@ -3495,8 +3495,8 @@
       "HOLIDAY LESSON": "0",
       "OUTSTANDING": "0",
       "TOTAL FEE": "39500",
-      "TOTAL PAID": "20000",
-      "BALANCE": "19500"
+      "TOTAL PAID": "30000",
+      "BALANCE": "9500"
     }
   },
   "SANJOS1125": {
